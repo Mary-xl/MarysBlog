@@ -46,8 +46,7 @@ After generating the initial point cloud, we developed a plant segmentation modu
 of interest (i.e., the plants) while removing the background points. This step involves two processes: green
 area segmentation and noise filtering. Following this step, each plant was individually extracted by point cloud clustering.
 
-![](/img/Tray3.png)
-![](/img/Tray4.png)
+![](/img/Tray3_4.png)
 
 
 ### Surface Reconstruction and Mesh Generation
