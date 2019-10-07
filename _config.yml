@@ -1,6 +1,6 @@
 # Site settings
 title: Mary's Blog
-SEOTitle: MaryLi的博客 | Mary Blog
+SEOTitle: Mary Li's Blog | 半亩方塘
 header-img: img/post-bg-desk.jpg
 email: xunlimary@gmail.com
 description: "There lies a glassy oblong pool, where light and shade pursue their course. How could it be so clear and cool? For fresh water comes from the source."
@@ -92,11 +92,13 @@ service-worker: true
 # Friends
 friends: [
     {
-
-        title: "Apple",
-        href: "https://apple.com"
+        title: "Australian Plant Phenomics Facility",
+        href: "https://www.plantphenomics.org.au/"
     },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "SNAP Lab",
+        href: "http://www.sage.unsw.edu.au/snap-laboratory"
+    },{
+        title: "PCL library",
+        href: "http://pointclouds.org/"
     }
 ]
