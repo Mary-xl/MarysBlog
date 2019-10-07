@@ -26,7 +26,7 @@ iii) it allows stereo reconstruction and segmentation of individual plants in tr
 The overall approach proved useful in quantifying morphometric parameters in 3D for a set of Arabidopsis
 accessions and relating plant structure to plant function.
 
-![](/img/icon.jpg)
+![](/img/Tray1.gif)
 >Keywords：Stereo reconstruction, 3D mesh,  Plant Phenotyping, Point cloud filtering
 
 ## Method
@@ -38,7 +38,7 @@ The platform,enclosed 3 types of cameras mounted overhead in three stations:a st
 
 The stereo reconstruction module is based on the semi-global matching method. After images were rectified, pairs of stereo images were matched using semi-global matching. The disparity map was generated along with the 3D point cloud for the whole tray.
 
-![](https://cdn.mos.cms.futurecdn.net/RdxhPVv8fAyM6oHsRgF6dH-650-80.png)
+![](/img/Tray2.png)
 
 ###  Plant Segmentation
 
@@ -46,7 +46,8 @@ After generating the initial point cloud, we developed a plant segmentation modu
 of interest (i.e., the plants) while removing the background points. This step involves two processes: green
 area segmentation and noise filtering. Following this step, each plant was individually extracted by point cloud clustering.
 
-![](https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-10.jpg)
+![](/img/Tray3.png)
+![](/img/Tray4.png)
 
 
 ### Surface Reconstruction and Mesh Generation
@@ -55,16 +56,15 @@ The next step was to generate surface meshes based on individual plant point clo
 module consists of two parts: a combination of the Greedy Projection and a hole filling algorithm followed by
 a Poisson Reconstruction.
 
-![](https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-13.jpg)
+![](/img/Tray5.png)
 
-![](https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-14.jpg)
 
 ### Experiment result
 
 After generating individual mesh, the surface area was calculated by summing the areas of each
 triangle in the mesh. The result of a sample tray for captured plants is shown below.
 
-![](https://cdn.sspai.com/2018-06-04-Artboard.jpg?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
+![](/img/Tray6.png)
 
 
 
