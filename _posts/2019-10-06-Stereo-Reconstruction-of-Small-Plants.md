@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Growth measurement of small plants in 3D by Using Stereo Reconstruction
+title:      Growth measurement of small plants in 3D by using stereo reconstruction
 author:     Mary Li
 header-img: img/
 catalog: true
@@ -36,7 +36,7 @@ The platform,enclosed 3 types of cameras mounted overhead in three stations:a st
 
 The stereo reconstruction module is based on the semi-global matching method. After images were rectified, pairs of stereo images were matched using semi-global matching. The disparity map was generated along with the 3D point cloud for the whole tray.
 
-![](/img/Tray2.png)
+![](/img/Tray2.gif)
 
 ###  Plant Segmentation
 
@@ -45,7 +45,7 @@ of interest (i.e., the plants) while removing the background points. This step i
 area segmentation and noise filtering. Following this step, each plant was individually extracted by point cloud clustering.
 
 ![](/img/Tray3_4.png)
-
+![](/img/Tray7.gif)
 
 ### Surface Reconstruction and Mesh Generation
 
@@ -59,16 +59,16 @@ a Poisson Reconstruction.
 ### Experiment result
 
 After generating individual mesh, the surface area was calculated by summing the areas of each
-triangle in the mesh. The result of a sample tray for captured plants is shown below.
-
+triangle in the mesh. The growth rate estimated based on surface area of one sample plant is shown below:
 ![](/img/Tray6.png)
 
 
 
-### 
-
 ### Reference
 
-- 
+- Li X., Zaragoza J., Kuffner P., Ansell P., Nguyen C., Daily H., Furbank R., Sirault X., 2015.
+Growth Measurement of Arabidopsis in 2.5D from a High Throughput Phenotyping Platform.
+Proceedings of the 21st International Congress on Modelling and Simulation (MODSIM2015). Gold
+Coast, Queensland, Australia, 29 November-4 December 2015.
  
 
