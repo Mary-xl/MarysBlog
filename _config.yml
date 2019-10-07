@@ -3,7 +3,7 @@ title: Mary's Blog
 SEOTitle: MaryLi的博客 | Mary Blog
 header-img: img/post-bg-desk.jpg
 email: xunlimary@gmail.com
-description: "There lies a glassy oblong pool, Where light and shade pursue their course. How could it be so clear and cool? For fresh water comes from the source."
+description: "There lies a glassy oblong pool, where light and shade pursue their course. How could it be so clear and cool? For fresh water comes from the source."
 keyword: "Mary"
 url: "http://Mary-xl.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,7 +12,7 @@ github_repo: "https://github.com/Mary-xl/Mary-xl.github.io.git" # you code repos
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Stay hungry, stay foolish."
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/icon.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
