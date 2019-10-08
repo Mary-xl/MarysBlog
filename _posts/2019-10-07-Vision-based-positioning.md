@@ -23,7 +23,7 @@ Ubiquitous positioning is considered to be a highly demanding application for to
 
 Positioning is an essential component in navigation systems. It mainly functions in two different ways: absolute self-localization (e.g. GPS) and dead-reckoning (e.g. inertial navigation system). In this paper, we propose a hybrid image-based navigation system that is capable of self-localization in both outdoor and indoor environments. It requires a mapping process where images of the navigation environment are captured and geo-referenced. The main improvements in this work are to geo-reference image feature points and use these features as 3D natural landmarks for positioning and navigation. By matching the real time query image with pre-stored geo-referenced images, the 3D landmarks represented by feature points are recognized and their geo-information are transferred from reference image to query image through these common feature points. Final positioning is based on photogrammetric space resection.
 
-<img src="/img/2019-10-07_1.png"/>
+<img src="img/2019-10-07_1.png">
 
 ### Image Geo-Referencing and Mapping 
 
