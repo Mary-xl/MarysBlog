@@ -89,6 +89,30 @@ The nature of such system has also been studied. The final position accuracy is 
 
 ## Related Publications
 
-- 
- 
+- Li, X., Wang, J., & Li, T. 2013. Seamless Positioning and Navigation by Using Geo-Referenced
+Images and Multi-Sensor Data. Sensors, 13(7), 9047-9069.
+- Li X., Wang J., Knight N., & W. Ding 2011. Vision-based Positioning with a Single Camera and 3D
+Maps: Accuracy and Reliability Analysis. Journal of Global Positioning Systems.
+- Li X., Wang, J. 2014. Image Matching Techniques for Vision-based Indoor Navigation Systems: A 3D
+Map Based Approach. Journal of Location Based Services, 8(1), 3-17.
+
+- Li X., Wang J., 2012. Image Matching Techniques for Vision-based Indoor Navigation Systems:
+Performance Analysis for 3D Map Based Approach. Proceedings of the 2012 International
+Conference on Indoor Positioning and Indoor Navigation (IPIN 2012), Sydney, Australia, 13-15th,November.
+- Li X., Wang J., 2012. Multi-image Matching for 3D Mapping in Vision-based Navigation Applications.Proceedings of the Ubiquitous Positioning Indoor Navigation and Location Based Service (UPINLBS),
+Finland, Oct. 2012.
+- Li X., Wang J., 2012. Evaluating photogrammetric approach of image-based positioning. Proceedings
+of the XXII Congress of International Society for Photogrammetry & Remote Sensing (ISPRS2012),
+Melbourne, August 2012
+- Li X., Wang J., Li R., Ding W., 2011. Image-based positioning with the use of geo-referenced SIFT
+features. Proceedings of the International Symposium on GPS/GNSS (IGNSS 2011), Sydney,
+Australia, November 2011.
+- Li X., Wang J., Liu W. & R Li., 2013. Geo-referenced 3D Maps: Concept and Experiments. The 8th
+International Symposium on Mobile Mapping Technology, Tainan, Taiwan,1-3 May.
+- Li X., Wang J., Yang L., 2011. Outlier Detection for Indoor Vision-Based Navigation Applications.
+Proceedings of the 24th International Technical Meeting of The Satellite Division of the Institute of
+Navigation (ION GNSS 2011), Portland, OR, September 2011.
+- Li X., Wang J., Knight N., Olesk A., Ding W., 2010. Indoor positioning within a single camera and 3D
+maps. IEEE Proceedings of Ubiquitous Positioning Indoor Navigation and Location Based Service
+(UPINLBS), 2010,Oct.
 
