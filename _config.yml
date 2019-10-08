@@ -6,7 +6,7 @@ email: xunlimary@gmail.com
 description: "There lies a glassy oblong pool, where light and shade pursue their course. How could it be so clear and cool? For fresh water comes from the source."
 keyword: "Mary"
 url: "http://Mary-xl.github.io"          # your host, for absolute URL
-baseurl: "http://Mary-xl.github.io/blog"      # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "https://mary-xl.github.io/MarysBlog/"      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/Mary-xl/Mary-xl.github.io.git" # you code repository
 
 # Sidebar settings
