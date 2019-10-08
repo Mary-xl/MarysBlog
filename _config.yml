@@ -102,3 +102,5 @@ friends: [
         href: "http://pointclouds.org/"
     }
 ]
+
+theme: jekyll-theme-cayman
