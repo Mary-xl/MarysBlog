@@ -2,7 +2,7 @@
 layout:     post
 title:      Growth measurement of small plants in 3D by using stereo reconstruction
 author:     Mary Li
-header-img: img/
+header-img: img/2019-10-06-bg.jpg
 catalog: true
 tags:
     - Stereo reconstruction, 
