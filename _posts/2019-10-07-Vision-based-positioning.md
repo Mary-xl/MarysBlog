@@ -74,7 +74,7 @@ It can be seen that the GPS measurements in the urban environment are poor, arou
 Since the target building has been identified in Section 3, when a user walks into the building, the geo-referenced images of its indoor environment are loaded. Then real time images are taken. Image matching based on SIFT is carried out between the query image and the geo-referenced images for position resolution.
 
 <video width="480" height="320" controls>
-<source src="https://github.com/Mary-xl/MarysBlog/blob/master/videos/indoor01_08_11.avi">
+<source src="https://github.com/Mary-xl/MarysBlog/blob/master/videos/indoor01_08_11.mp4">
 </video>
 
 ![2019-10-07-11.png](https://i.loli.net/2019/10/08/mdO3vQC5LpzEgVT.png)
