@@ -35,7 +35,7 @@ Then feature based image matching is performed between images with overlapped ar
 
 During the navigation process, query images are taken wherever self-localization is needed. Although the method varies for indoors and outdoors, the processes for the two environments are based on the same principles: by performing the image matching between real time query image and reference images, 3D coordinates are transferred through common features from reference images to the query image.  By obtaining the 3D coordinates of feature points and their 2D coordinates on the query image, camera position and orientation in 6 degree of freedom can be determined through photogrammetric space resection. 
 
-![2019-10-07_3.png](https://i.loli.net/2019/10/08/W3d1HFg9zsjcwXq.png)
+![2019-10-07_3.png](https://i.loli.net/2019/10/08/fjPziybqTA8ZxH2.png))
 
 
 ## Outdoor Positioning
