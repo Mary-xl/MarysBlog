@@ -73,8 +73,8 @@ It can be seen that the GPS measurements in the urban environment are poor, arou
 
 Since the target building has been identified in Section 3, when a user walks into the building, the geo-referenced images of its indoor environment are loaded. Then real time images are taken. Image matching based on SIFT is carried out between the query image and the geo-referenced images for position resolution.
 
-<video width="480" height="320" controls>
-<source src="https://github.com/Mary-xl/MarysBlog/blob/master/videos/indoor01_08_11.mp4">
+<video width="1280" height="1024" controls>
+<source src="https://youtu.be/94zQflwlEio">
 </video>
 
 ![2019-10-07-11.png](https://i.loli.net/2019/10/08/mdO3vQC5LpzEgVT.png)
@@ -88,6 +88,7 @@ In this research, we have presented a comprehensive system that adopts a hybrid 
 - A combined use of photogrammetric methods and computer vision algorithms;
 - The use of geo-referenced images as 3D maps for image-based positioning;
 - The adoption of multiple sensors to assist the position resolution.
+
 Experiments have demonstrated that such a system can largely improve the position accuracy for areas where GPS signal is degraded (such as in urban canyons). The system also provides excellent position accuracy (20 cm) for indoor environments.
 The nature of such system has also been studied. The final position accuracy is mainly determined by the geometry (number & distribution) of the identified geo-referenced features. Therefore, the geo-referenced 3D feature density of the reference images, the quality of image matching and most importantly the scene of the query image become the essential elements of the solution. It therefore has limitations in environments with shortage of texture or poor lighting conditions. Moreover, in complex indoor environments where initial estimates are hard to achieve, other positioning method needs to be introduced to assist vision-based methods. 
 
