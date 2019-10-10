@@ -71,11 +71,9 @@ It can be seen that the GPS measurements in the urban environment are poor, arou
 
 ## Indoor Positioning and Result
 
-Since the target building has been identified in Section 3, when a user walks into the building, the geo-referenced images of its indoor environment are loaded. Then real time images are taken. Image matching based on SIFT is carried out between the query image and the geo-referenced images for position resolution.
+Since the target building has been identified in Section 3, when a user walks into the building, the geo-referenced images of its indoor environment are loaded. Then real time images are taken. Image matching based on SIFT is carried out between the query image and the geo-referenced images for position resolution. A video is taken in the indoor environment for positioning purposes.
+A calibrated video camera (Logitech Webcam Pro2000) was mounted on a moving vehicle with sampling rate of 1 Hz.  Its relative position to the vehicle was fixed, which means the experiment was partially controlled at camera height Z:-0.725m. We did the positioning by extracting image frames from the video and match with the geo-referenced images frame by frame. Each frame is an epoch; a position in 6 degree of freedom (6DOF) was calculated.
 
-<video width="320" height="258" controls>
-<source src="https://youtu.be/94zQflwlEio">
-</video>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/94zQflwlEio" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ![2019-10-07-11.png](https://i.loli.net/2019/10/08/mdO3vQC5LpzEgVT.png)
