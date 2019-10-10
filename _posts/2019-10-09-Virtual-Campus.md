@@ -3,7 +3,7 @@ layout:     post
 title:      Virtual Campus
 date:       2019-10-09
 author:     Mary Li
-header-img: img/2019-10-07_bg.png
+header-img: ![2019-10-09-bg.jpeg](https://i.loli.net/2019/10/10/oDhNSuIWdyczZv5.jpg)
 catalog: true
 tags:
     - 3D mapping and reconstruction
