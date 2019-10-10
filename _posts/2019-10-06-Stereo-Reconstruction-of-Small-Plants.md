@@ -5,9 +5,9 @@ author:     Mary Li
 header-img: img/2019-10-06-bg.jpg
 catalog: true
 tags:
-    - Stereo reconstruction, 
-    - 3D mesh
+    - 3D mapping and reconstruction
     - Plant Phenotyping
+    - Image processing
     - Point cloud processing
 ---
 

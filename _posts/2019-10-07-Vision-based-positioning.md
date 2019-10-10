@@ -6,11 +6,10 @@ author:     Mary Li
 header-img: img/2019-10-07_bg.png
 catalog: true
 tags:
-    - 3D mapping 
+    - 3D mapping and reconstruction
     - visiual navigation
-    - feature extraction
-    - image matching
-    - photogrammetric space resection
+    - image processing
+    - photogrammetry
 ---
 
 ## Introduction
