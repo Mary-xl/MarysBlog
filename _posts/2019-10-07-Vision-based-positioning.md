@@ -77,8 +77,7 @@ Since the target building has been identified in Section 3, when a user walks in
 <source src="https://youtu.be/94zQflwlEio">
 </video>
 
-<iframe width="560" height="315" src="https://youtu.be/94zQflwlEio" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/94zQflwlEio" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ![2019-10-07-11.png](https://i.loli.net/2019/10/08/mdO3vQC5LpzEgVT.png)
 ![2019-10-07-12.png](https://i.loli.net/2019/10/08/3dyc2aB5JFYZCzU.png)
 
