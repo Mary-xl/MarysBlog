@@ -11,6 +11,9 @@ tags:
     - Point cloud processing
 ---
 
+_In 2014, I joined a research organization focusing on using computer vision technologies for plant phenotyping research. I worked as a research engineer
+focusing on developing software tools/ processing pipelines to process and analysis visual information to understand plant development._
+
 ## Introduction
 
 High throughput phenotyping platforms, when combined with 3D image analysis, enable researchers to inves-

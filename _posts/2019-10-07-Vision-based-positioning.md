@@ -12,6 +12,9 @@ tags:
     - photogrammetry
 ---
 
+_I started my PhD study from 2010 and spent the next 3 years on research topic "Vision-based Navigation with reality-based 3D Maps": 
+The key technology used include photogrammetry, computer vision geometry (SFM), image processing and analysis, navigation and positioning._
+
 ## Introduction
 
 Ubiquitous positioning is considered to be a highly demanding application for today’s Location-Based Services (LBS). While satellite-based navigation has achieved great advances in the past few decades, positioning and navigation in indoor and deep urban areas has remained a challenging topic. In this research, we present a hybrid image-based positioning system that is intended to provide seamless position solution in 6 degree of freedom (6DoF) for location-based services in both outdoor and indoor environments. It mainly uses visual input to match with geo-referenced images for image-based positioning resolution, and also takes advantage of multiple sensors onboard, including built-in GPS receiver and digital compass to assist visual methods. Experiments demonstrate that such system can largely improve the position accuracy for areas where GPS signal is degraded (such as in urban canyons), and it also provides excellent position accuracy for indoor environments.
