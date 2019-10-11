@@ -61,9 +61,7 @@ Plant height estimation consists of two steps: 1) region of interest (ROI) extra
 ####  region of interest (ROI) extraction
  The ROI is defined by the user in the pre-processing step, where contours are drawn
 and selected on top of the ortho-mosaic. Their 2D shapes are then used for 3D point cloud segmentation. Both polygon and circular selection and segmentation are supported (the latter being useful for trees).
-![Screenshot from 2019-10-11 16-04-47.png](https://i.loli.net/2019/10/11/VbmGWNycJ6wKLdT.png)
 ![polygon_roi.gif](https://i.loli.net/2019/10/11/MlwS6yVoriHL7vI.gif)
-![circle_roi.gif](https://i.loli.net/2019/10/11/LbTO9s3VkzNQxMC.gif)
 
 #### Plant height estimation using inverse distance weighting
 After each ROI point cloud has been extracted, its height is
