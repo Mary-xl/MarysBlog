@@ -12,7 +12,7 @@ tags:
     - photogrammetry
 ---
 
-_I started my PhD study from 2010 and spent the next 3 years on research topic "Vision-based Navigation with reality-based 3D Maps": 
+_I started my PhD study from 2010 and spent the next 4 years on research topic "Vision-based Navigation with reality-based 3D Maps": 
 The key technology used include photogrammetry, computer vision geometry (SFM), image processing and analysis, navigation and positioning._
 
 ## Introduction

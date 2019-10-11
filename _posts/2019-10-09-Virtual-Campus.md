@@ -11,7 +11,7 @@ tags:
     - image processing
 ---
 
-_For my bachelor’s degree thesis in 2009, I developed a virtual campus system based on the International School of Software in Wuhan University. Although some of the technologies used in the system seem  naive and outdated today, it opened the door to the world of computer vision and 3D reconstruction for me. Since then I chose to pursue my career in this field  that I felt passionate about. This thesis received “Best Undergraduate Thesis”, the second prize in Hubei Province, China._ 
+_For my bachelor’s degree thesis in 2009, I developed a virtual campus system based on the International School of Software in Wuhan University. Although some of the technologies used in the system seem  naive and outdated today, it opened the door to the world of computer vision and 3D reconstruction for me. Since then I chose to pursue my career in this field  that I felt passionate about. This thesis received “Best Undergraduate Thesis”, the second prize in Hubei Province, China, 2009._ 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vkeJeaIkTEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

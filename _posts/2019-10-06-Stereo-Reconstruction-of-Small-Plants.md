@@ -6,7 +6,7 @@ header-img: img/2019-10-06-bg.jpg
 catalog: true
 tags:
     - 3D mapping and reconstruction
-    - Plant Phenotyping
+    - Agriculture-Plant Phenotyping
     - Image processing
     - Point cloud processing
 ---
