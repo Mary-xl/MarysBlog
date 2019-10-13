@@ -4,10 +4,18 @@ layout: default
 description: Stay hungry stay foolish
 header-img: "img/post-bg-tag.png"
 ---
+<script>
+
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', '{{ "/js/particles.json " | prepend: site.baseurl }}', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+</script>
 <style>
     .intro-header {
-        width: 1680px;
-        height: 400px;
+    width: 1680px;
+    height: 400px;
     }
 </style>
 
