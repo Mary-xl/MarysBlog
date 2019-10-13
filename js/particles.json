@@ -10,6 +10,10 @@
     "color": {
       "value": "#ffffff"
     },
+    "canvas": {
+      "w": "500px",
+      "h": "500px"
+    },
     "shape": {
       "type": "circle",
       "stroke": {

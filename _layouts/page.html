@@ -3,18 +3,10 @@ layout: default
 ---
 <script>
 
-particlesJS('particles-js', {
-  canvas: {
-    w: "1680px",
-    h: "500px"
-  },
-  // rest of code
-});
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', '{{ "/js/particles.json " | prepend: site.baseurl }}', function() {
   console.log('callback - particles.js config loaded');
 });
-
 
 </script>
 <!-- Page Header -->
