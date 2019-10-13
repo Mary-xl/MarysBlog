@@ -98,8 +98,16 @@ friends: [
         title: "SNAP Lab",
         href: "http://www.sage.unsw.edu.au/snap-laboratory"
     },{
+        title: "OpenCV",
+        href: "https://opencv.org/"
+    },
+    {
         title: "PCL library",
         href: "http://pointclouds.org/"
+    }
+    {
+        title: "Pytorch",
+        href: "https://pytorch.org/"
     }
 ]
 
