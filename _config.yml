@@ -100,12 +100,10 @@ friends: [
     },{
         title: "OpenCV",
         href: "https://opencv.org/"
-    },
-    {
+    },{
         title: "PCL library",
         href: "http://pointclouds.org/"
-    }
-    {
+    },{
         title: "Pytorch",
         href: "https://pytorch.org/"
     }
