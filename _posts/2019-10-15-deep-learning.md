@@ -13,7 +13,7 @@ tags:
 _From this week, I will begin a paper digest series in which classic papers are read, extracted and discussed with related questions and thought.
  This article is the digest from [1]_
 
-## Excerpt
+## 1. Excerpt
 To properly adjust the weight vector, the learning algorithm computes a gradient vector that, for each weight, indicates by what amount
 the error would increase or decrease if the weight were increased by a tiny amount. The weight vector is then adjusted in the opposite direction to the gradient vector.
 ![Screenshot from 2019-10-09 21-58-07.png](https://i.loli.net/2019/10/16/LC3pmPNd6a95yB8.png)[2]
@@ -48,7 +48,7 @@ behind ConvNets that take advantage of the properties of natural
 signals: local connections, shared weights, pooling and the use of
 many layers.
 
-## Related questions and discussion 
+## 2. Related questions and discussion 
 
 #### Q1. What is bias and variance in machine learning?  How to solve the problem of under-fitting and over-fitting?
 ![Screenshot from 2019-10-15 22-30-49.png](https://i.loli.net/2019/10/16/OPiz863yUqhIKxG.png) [3]
