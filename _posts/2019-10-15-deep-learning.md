@@ -4,7 +4,7 @@ title:      Deep Learning
 subtitle:   Reading and Thought
 date:       2019-10-15
 author:     Mary Li
-header-img: img/
+header-img: img/2019-10-15-bg.jpeg
 catalog: true
 tags: 
     -  deep learning
@@ -50,12 +50,12 @@ many layers.
 
 ## Related questions and discussion 
 
-### Q1. What is bias and variance in machine learning?  How to solve the problem of under-fitting and over-fitting?
+#### Q1. What is bias and variance in machine learning?  How to solve the problem of under-fitting and over-fitting?
 ![Screenshot from 2019-10-15 22-30-49.png](https://i.loli.net/2019/10/16/OPiz863yUqhIKxG.png) [3]
 In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. These models usually have high bias and low variance. It happens when we have very less amount of data to build an accurate model or when we try to build a linear model with a nonlinear data. Also, these kind of models are too simple to capture the complex patterns in data[3].
 Intuitively, overfitting occurs when the model or the algorithm fits the data too well.  Specifically, overfitting occurs if the model or algorithm shows low bias but high variance.  Overfitting is often a result of an excessively complicated model, and it can be prevented by fitting multiple models and using validation or cross-validation to compare their predictive accuracies on test data [4].
 
-### Q2. How to calculate the number of parameters in the CNN?
+#### Q2. How to calculate the number of parameters in the CNN?
       (1) For convolution layers, suppose input feature map is a*b*l, output feature map is c*d*k, the kernel itself is m*n:
         num_of_params=(m*n*l+1)*k
         if no padding:
@@ -65,7 +65,7 @@ Intuitively, overfitting occurs when the model or the algorithm fits the data to
           num_of_params=(n+1)*m
 
 
-### Q3. Why use non-linear activation function? What will happen if use a linear activation function?
+#### Q3. Why use non-linear activation function? What will happen if use a linear activation function?
 
 (1) Non-linear activation functions allow the model to create complex mappings between input and output data, which is suitable for modelling complex and high dimension data, such as image, video, audio etc. 
 
@@ -74,8 +74,8 @@ Intuitively, overfitting occurs when the model or the algorithm fits the data to
  -All layers of the neural network collapse into one—with linear activation functions, no matter how many layers in the neural network, the last layer will be a linear function of the first layer (because a linear combination of linear functions is still a linear function). So a linear activation function turns the neural network into just one layer. A neural network with a linear activation function is simply a linear regression model. It has limited power and ability to handle complexity varying parameters of input data [5].
 
 ## Reference
-[1] LeCun, Yann & Bengio, Y. & Hinton, Geoffrey. (2015). Deep Learning. Nature. 521. 436-44. 10.1038/nature14539. 
-[2] http://www.deepshare.net/
-[3] https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
-[4] https://chemicalstatistician.wordpress.com/2014/03/19/machine-learning-lesson-of-the-day-overfitting-and-underfitting/
-[5] https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/
+[1] LeCun, Yann & Bengio, Y. & Hinton, Geoffrey. (2015). Deep Learning. Nature. 521. 436-44. 10.1038/nature14539. <br>
+[2] http://www.deepshare.net/ <br>
+[3] https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229 <br>
+[4] https://chemicalstatistician.wordpress.com/2014/03/19/machine-learning-lesson-of-the-day-overfitting-and-underfitting/ <br>
+[5] https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/ <br>
