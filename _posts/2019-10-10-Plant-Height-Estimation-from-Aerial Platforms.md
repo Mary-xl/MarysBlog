@@ -20,6 +20,15 @@ agriculture field for trait analysis. I include here the published part of the r
 
 With the development of computer vision technologies, using images acquired by aerial platforms to measure large scale agricultural fields has been increasingly studied. In order to provide a more time efficient, light weight and low cost solution, in this paper we present a highly automated processing pipeline that performs plant height estimation based on a dense point cloud generated from aerial RGB images, requiring only a single flight. A previously acquired terrain model is not required as input. The process extracts a segmented plant
 layer and bare ground layer. Ground height estimation achieves sub 10cm accuracy. High throughput plant height estimation has been performed and results are compared with LiDAR based measurements.
+The key innovation is to estimate
+ground height underneath the target plant area using an inverse
+distance weighting from visible points of the neighbouring
+ground in form of gridded ground controids. It not only
+enables plant height calculation at plot level, but can also
+be applied to various shapes of canopies for different types
+of plants. The only manual input required is the marking of
+Ground Control Points (GCP) and contour definition of the
+Regions of Interest (ROI).
 
 ## METHODOLOGY
 
@@ -99,6 +108,12 @@ A consistent offset between aerial measurement and Lidar can be observed. Intere
 ground LiDAR, a systematic under-estimation is observed for structure from motion techniques (aerial point cloud derived plant height) . The authors believe their result agrees with previous studies [5] where it is found that structure from motion from aerial imagery lacks the ability to reconstruct accurately the top of the canopy, due to the reason that
 aerial RGB imagery has a coarser spatial resolution and limited penetration capacity compared with ground LiDAR. Future research will be focused mitigating these two
 shortcomings with other sensors and technologies.
+
+## Development
+I personally contributed to over 70% of system design and development (the whole backend pipeline), including the main innovation of ground height estimation of invisible areas and various point cloud processing procedures for layer segmentation and height estimation.
+
+
+
 
 ## Reference
 [1] K. Zhang, S.-C. Chen, D. Whitman, M.-L. Shyu, J. Yan, and C. Zhang,
