@@ -10,20 +10,20 @@ tags:
     -  deep learning
     -  paper digest 
 ---
-_From this week, I will begin a paper digest series in which classic papers are read, extracted and discussed with related questions and thought.
+_From this week, I will begin a paper digest series in which classic papers are read, extracted and discussed with relevant questions I could think of, then give reference answers or my thought.
  This article is the digest from [1]_
 
 ## 1. Excerpt
-To properly adjust the weight vector, the learning algorithm computes a gradient vector that, for each weight, indicates by what amount
-the error would increase or decrease if the weight were increased by a tiny amount. The weight vector is then adjusted in the opposite direction to the gradient vector.
+_To properly adjust the weight vector, the learning algorithm computes a gradient vector that, for each weight, indicates by what amount
+the error would increase or decrease if the weight were increased by a tiny amount. The weight vector is then adjusted in the opposite direction to the gradient vector._
 ![Screenshot from 2019-10-09 21-58-07.png](https://i.loli.net/2019/10/16/LC3pmPNd6a95yB8.png)[2]
 
-The objective function, averaged over all the training examples, can be seen as a kind of hilly landscape in the high-dimensional space of
+_The objective function, averaged over all the training examples, can be seen as a kind of hilly landscape in the high-dimensional space of
 weight values. The negative gradient vector indicates the direction
 of steepest descent in this landscape, taking it closer to a minimum,
-where the output error is low on average.
+where the output error is low on average._
 
-A deep-learning architecture is a multilayer stack of simple mod-
+_A deep-learning architecture is a multilayer stack of simple mod-
 ules, all (or most) of which are subject to learning, and many of which
 compute non-linear input–output mappings. Each module in the
 stack transforms its input to increase both the selectivity and the
@@ -32,7 +32,7 @@ a depth of 5 to 20, a system can implement extremely intricate func-
 tions of its inputs that are simultaneously sensitive to minute details
 — distinguishing Samoyeds from white wolves — and insensitive to
 large irrelevant variations such as the background, pose, lighting and
-surrounding objects.
+surrounding objects._
 
 ### Backpropagation to train multilayer architectures 
 ![Screenshot from 2019-10-14 23-10-11.png](https://i.loli.net/2019/10/16/pICHxlbNjvskyQg.png)[2]
@@ -41,20 +41,22 @@ surrounding objects.
 
 ### Convolutional neural networks
 
-Many data modalities are in the form of multiple arrays: 1D for signals and
+_Many data modalities are in the form of multiple arrays: 1D for signals and
 sequences, including language; 2D for images or audio spectrograms;
 and 3D for video or volumetric images. There are four key ideas
 behind ConvNets that take advantage of the properties of natural
 signals: local connections, shared weights, pooling and the use of
-many layers.
+many layers._
 
 ## 2. Related questions and discussion 
 
 #### Q1. What is bias and variance in machine learning?  How to solve the problem of under-fitting and over-fitting?
 ![Screenshot from 2019-10-15 22-30-49.png](https://i.loli.net/2019/10/16/OPiz863yUqhIKxG.png) [3]
-In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. These models usually have high bias and low variance. It happens when we have very less amount of data to build an accurate model or when we try to build a linear model with a nonlinear data. Also, these kind of models are too simple to capture the complex patterns in data[3].
-Intuitively, overfitting occurs when the model or the algorithm fits the data too well.  Specifically, overfitting occurs if the model or algorithm shows low bias but high variance.  Overfitting is often a result of an excessively complicated model, and it can be prevented by fitting multiple models and using validation or cross-validation to compare their predictive accuracies on test data [4].
 
+(1) _In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. These models usually have high bias and low variance. It happens when we have very less amount of data to build an accurate model or when we try to build a linear model with a nonlinear data. Also, these kind of models are too simple to capture the complex patterns in data[3].
+Intuitively, overfitting occurs when the model or the algorithm fits the data too well.  Specifically, overfitting occurs if the model or algorithm shows low bias but high variance.  Overfitting is often a result of an excessively complicated model, and it can be prevented by fitting multiple models and using validation or cross-validation to compare their predictive accuracies on test data [4]._
+
+(2) 
 #### Q2. How to calculate the number of parameters in the CNN?
       (1) For convolution layers, suppose input feature map is a*b*l, output feature map is c*d*k, the kernel itself is m*n:
         num_of_params=(m*n*l+1)*k
@@ -71,7 +73,30 @@ Intuitively, overfitting occurs when the model or the algorithm fits the data to
 
 (2) Two consequences:
 -Not possible to use backpropagation  since the derivative is a constant and not related to the input. 
- -All layers of the neural network collapse into one—with linear activation functions, no matter how many layers in the neural network, the last layer will be a linear function of the first layer (because a linear combination of linear functions is still a linear function). So a linear activation function turns the neural network into just one layer. A neural network with a linear activation function is simply a linear regression model. It has limited power and ability to handle complexity varying parameters of input data [5].
+-_All layers of the neural network collapse into one—with linear activation functions, no matter how many layers in the neural network, the last layer will be a linear function of the first layer (because a linear combination of linear functions is still a linear function).
+  So a linear activation function turns the neural network into just one layer. A neural network with a linear activation function is simply a linear regression model. It has limited power and ability to handle complexity varying parameters of input data [5]._
+
+#### Q4. What is gradient explosion and vanishing? How to deal with it?
+(1) During the training process of a deep learning nn, the gradients back-propagated through the network from the output layer all the way to the initial layers, the gradients can therefore accumulate via matrix multiplications.
+If they have small values (such as the derivative of an activation function<1), it will lead to an exponential shrink (vanish), resulting in weights unable to learn/update;
+On the contrary, if they have big values (>1) it will lead to an explosive grow of the gradients on the way back and very large updates on the weights. The network will therefore become very unstable and unable to learn.  Typical signs:
+-Loss changes dramatically during updates;
+-Loss not decrease;
+-Weight parameters become big->NAN
+-Loss become NAN
+
+(2) For gradient explosion, fix methods:
+-Regularization
+-Gradient Clipping
+-RELU saves the world lol
+-Short cut in deep NN (ResNet)
+-Using a shallower network
+
+For gradient vanishing, fix methods:
+-Chosing a more suitable activation function (e.g. using RELU to replace sigmoid)
+-Modify weight initialization
+
+
 
 ## Reference
 [1] LeCun, Yann & Bengio, Y. & Hinton, Geoffrey. (2015). Deep Learning. Nature. 521. 436-44. 10.1038/nature14539. <br>
