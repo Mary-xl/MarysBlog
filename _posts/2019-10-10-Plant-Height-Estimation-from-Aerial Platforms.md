@@ -111,7 +111,7 @@ shortcomings with other sensors and technologies.
 
 ## Development
 I personally contributed to over 70% of system design and development (the whole backend pipeline), including the main innovation of ground height estimation of invisible areas and various point cloud processing procedures for layer segmentation and height estimation.
-Programming aspect: C++, Python, PCL library, OpenCV and CloudCompare for visualization
+Programming aspect: C++, Python, PCL library, OpenCV, Pytorch
 
 
 
