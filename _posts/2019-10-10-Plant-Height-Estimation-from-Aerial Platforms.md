@@ -27,8 +27,8 @@ ground in form of gridded ground controids. It not only
 enables plant height calculation at plot level, but can also
 be applied to various shapes of canopies for different types
 of plants. The only manual input required is the marking of
-Ground Control Points (GCP) and contour definition of the
-Regions of Interest (ROI).
+Ground Control Points (GCP) and contour labeling of the
+Regions of Interest (ROI) in the plot detection process.
 
 ## METHODOLOGY
 
