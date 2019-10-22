@@ -10,7 +10,7 @@ tags:
     -  deep learning
     -  paper digest 
 ---
-_From this week, I will begin a paper digest series in which classic papers are read, extracted and discussed with relevant questions I could think of, then give reference answers or my thought.
+_From this week, I will begin a paper digest series in which classic papers are read, extracted and digest by asking relevant questions (I could think of), then give reference answers or my thought.
  This article is the digest from [1]_
 
 ## 1. Excerpt
@@ -53,8 +53,9 @@ many layers._
 #### Q1. What is bias and variance in machine learning?  How to solve the problem of under-fitting and over-fitting?
 ![Screenshot from 2019-10-15 22-30-49.png](https://i.loli.net/2019/10/16/OPiz863yUqhIKxG.png) [3]
 
-(1) _In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. These models usually have high bias and low variance. It happens when we have very less amount of data to build an accurate model or when we try to build a linear model with a nonlinear data. Also, these kind of models are too simple to capture the complex patterns in data[3].
-Intuitively, overfitting occurs when the model or the algorithm fits the data too well.  Specifically, overfitting occurs if the model or algorithm shows low bias but high variance.  Overfitting is often a result of an excessively complicated model, and it can be prevented by fitting multiple models and using validation or cross-validation to compare their predictive accuracies on test data [4]._
+(1) In supervised learning, underfitting often take place when the model is too simple to capture the actual charateristic of the data. Normally it happens when there is not much data for training. It normally has a low variance but high bias.
+On the other hand, overfitting happens when the model fit too well for a specific dataset (e.g. training data) but not generalize enough for other datasets. It usually has low bias but high variance. Overfitting often take place when the model
+has been built too complicated. Therefore from this perspective, a good way to mitigate overfitting is to decrease the number of features (e.g. Drop-out); or use regularization to avoid certain weight parameters been too "powerful"*[]: 
 
 (2) 
 #### Q2. How to calculate the number of parameters in the CNN?
