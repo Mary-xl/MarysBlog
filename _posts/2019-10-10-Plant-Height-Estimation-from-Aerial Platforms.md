@@ -68,8 +68,8 @@ at 50 × 50 resolution with each grid covering approximately 80 m^2 . If a grid 
 Plant height estimation consists of two steps: 1) region of interest (ROI) extraction; 2) height estimation for each ROI.
 
 ####  region of interest (ROI) extraction
- The ROI is defined by the user in the pre-processing step, where contours are drawn
-and selected on top of the ortho-mosaic. Their 2D shapes are then used for 3D point cloud segmentation. Both polygon and circular selection and segmentation are supported (the latter being useful for trees).
+The ROI is extracted by employ state of the art FasterRCNN, where contours/bounding boxes of plots and trees are detected and located on top of the ortho-mosaic (this part hasn't been published).
+Their 2D bounding boxes are then used for 3D point cloud segmentation. 
 ![polygon_roi.gif](https://i.loli.net/2019/10/11/MlwS6yVoriHL7vI.gif)
 
 #### Plant height estimation using inverse distance weighting
