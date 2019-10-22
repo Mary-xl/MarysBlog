@@ -13,11 +13,11 @@ _This article intend to summarise the evaluation metrics for classification mode
 
 ![K854BV.png](https://s2.ax1x.com/2019/10/22/K854BV.png)
 
-Recall=True Positive/(True Positive+False Negative)=TPR
-Precision=True Positive/(True Positive+False Positive)
-Accuracy=(True Positive +True Negative)/(True Positive+False Positive+True Negative+False Negative)
-Specify=True Negative/(False Positive+True Negative)
-FPR=1- specify=False Positive/(False Positive+True Negative)
+Recall=True Positive/(True Positive+False Negative)=TPR <br>
+Precision=True Positive/(True Positive+False Positive) <br>
+Accuracy=(True Positive +True Negative)/(True Positive+False Positive+True Negative+False Negative) <br>
+Specify=True Negative/(False Positive+True Negative) <br>
+FPR=1- specify=False Positive/(False Positive+True Negative) <br>
 
 (1) While ideally both recall and precision are high, in reality there is always a trade-off between the two.
 e.g. 
