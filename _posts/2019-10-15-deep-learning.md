@@ -72,19 +72,19 @@ has been built too complicated. Therefore from this perspective, a good way to m
 
 (1) Non-linear activation functions allow the model to create complex mappings between input and output data, which is suitable for modelling complex and high dimension data, such as image, video, audio etc. 
 
-(2) Two consequences:
+(2) _Two consequences:
 -Not possible to use backpropagation  since the derivative is a constant and not related to the input. 
--_All layers of the neural network collapse into one—with linear activation functions, no matter how many layers in the neural network, the last layer will be a linear function of the first layer (because a linear combination of linear functions is still a linear function).
+-All layers of the neural network collapse into one—with linear activation functions, no matter how many layers in the neural network, the last layer will be a linear function of the first layer (because a linear combination of linear functions is still a linear function).
   So a linear activation function turns the neural network into just one layer. A neural network with a linear activation function is simply a linear regression model. It has limited power and ability to handle complexity varying parameters of input data [5]._
 
 #### Q4. What is gradient explosion and vanishing? How to deal with it?
 (1) During the training process of a deep learning nn, the gradients back-propagated through the network from the output layer all the way to the initial layers, the gradients can therefore accumulate via matrix multiplications.
 If they have small values (such as the derivative of an activation function<1), it will lead to an exponential shrink (vanish), resulting in weights unable to learn/update;
-On the contrary, if they have big values (>1) it will lead to an explosive grow of the gradients on the way back and very large updates on the weights. The network will therefore become very unstable and unable to learn.  Typical signs:
--Loss changes dramatically during updates;
--Loss not decrease;
--Weight parameters become big->NAN
--Loss become NAN
+On the contrary, if they have big values (>1) it will lead to an explosive grow of the gradients on the way back and very large updates on the weights. The network will therefore become very unstable and unable to learn.  Typical signs:<br>
+-Loss changes dramatically during updates;<br>
+-Loss not decrease; <br>
+-Weight parameters become big->NAN; <br>
+-Loss become NAN. <br>
 
 (2) For gradient explosion, fix methods:
 -Regularization
