@@ -13,7 +13,7 @@ _This article tries to summarise some of the detailed specifications of using de
 at latter time._
 
 ## 1. Data pre-processing
-![KN7ytI.png](https://s2.ax1x.com/2019/10/24/KN7ytI.png) <center> [4] </center>
+![KN7ytI.png](https://s2.ax1x.com/2019/10/24/KN7ytI.png) <center> [4] PCA </center>
 
 Normally we do a data normalization followed by a dimension reduction n->k (PCA). 
 The key idea is to reduce the size of data while maintaining as high variance (信息量）as possible. <br>
@@ -38,6 +38,9 @@ For these n columns of eigenvectors, get the first k columns as the dimension yo
 sample code : <br>
 ![KN7xHJ.png](https://s2.ax1x.com/2019/10/24/KN7xHJ.png)
 
+
+Note that in modern CNN, the data preprocessing is no longer that important. More popular technique at this stage is data augmentation.
+It ensures enough data and variance for training.
 
 ## 2. Initialization
 The basic idea is that we want the networks to begin with a smooth forward and backward propagation. If chosen too big, it will lead to gradient explosion. 
@@ -64,10 +67,10 @@ By using a all 0 or Gaussian distribution to initialize weight, the problem of g
  
 
 ## Reference
--[1] https://www.youtube.com/watch?v=rng04VJxUt4
--[2] https://intoli.com/blog/neural-network-initialization/ <br>
--[3] https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94
--[4] "Getting Started with Machine Learning" by Jim Liang
+[1] https://www.youtube.com/watch?v=rng04VJxUt4 <br>
+[2] https://intoli.com/blog/neural-network-initialization/ <br>
+[3] https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94 <br>
+[4] "Getting Started with Machine Learning" by Jim Liang <br>
 
           
           
