@@ -17,19 +17,22 @@ The basic idea is that we want the networks to begin with a smooth forward and b
 If too small, the gradient will vanish. <br>
 Classical initialization methods include: Gaussian, Xavier (2010), and Kaiming. <br>
 
-(1) Gaussian: <br>
+### Using random or Gaussian initialization
+Gaussian: <br>
           mean=0 <br>
           std=1 <br>
 By using a all 0 or Gaussian distribution to initialize weight, the problem of gradient explosion and vanish occurs. <br>
-![KNkNJf.png](https://s2.ax1x.com/2019/10/24/KNkNJf.png) [1] <br>
-(2) A wise choice of initilization method actually depends on the activation function used in the layer.
+![KNkNJf.png](https://s2.ax1x.com/2019/10/24/KNkNJf.png) <center> [1] </center><br>
+
+### Using Xavier or Kaiming methods
+ A wise choice of initilization method actually depends on the activation function used in the layer.
  Xavier (2010): at a time without activation or tanh <br>
                 mean=0 <br>
-                std: [![KNkUW8.png](https://s2.ax1x.com/2019/10/24/KNkUW8.png)](https://imgchr.com/i/KNkUW8) [2]
+                std: [![KNkUW8.png](https://s2.ax1x.com/2019/10/24/KNkUW8.png)](https://imgchr.com/i/KNkUW8) <center> [2] </center>
                   
  Kaiming: <br>
           mean=0
-          std: [![KNkwQg.png](https://s2.ax1x.com/2019/10/24/KNkwQg.png)](https://imgchr.com/i/KNkwQg) [2]
+          std: [![KNkwQg.png](https://s2.ax1x.com/2019/10/24/KNkwQg.png)](https://imgchr.com/i/KNkwQg) <center> [2] </center>
   
  
 
