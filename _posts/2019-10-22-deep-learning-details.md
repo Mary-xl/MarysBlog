@@ -13,6 +13,8 @@ _This article tries to summarise some of the detailed specifications of using de
 at latter time._
 
 ## 1. Image pre-processing
+![KN7ytI.png](https://s2.ax1x.com/2019/10/24/KN7ytI.png) <center> [4] </center>
+
 Normally we do a data normalization followed by a dimension reduction n->k (PCA). 
 The key idea is to reduce the size of data while maintaining as high variance (信息量）as possible. <br>
 
@@ -78,6 +80,7 @@ By using a all 0 or Gaussian distribution to initialize weight, the problem of g
 -[1] https://www.youtube.com/watch?v=rng04VJxUt4
 -[2] https://intoli.com/blog/neural-network-initialization/ <br>
 -[3] https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94
+-[4] "Getting Started with Machine Learning" by Jim Liang
 
           
           
