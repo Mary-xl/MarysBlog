@@ -12,7 +12,7 @@ tags:
 _This article tries to summarise some of the detailed specifications of using deep learning neural networks. Some parts may not be accurate and will be modified 
 at latter time._
 
-## 1. Image pre-processing
+## 1. Data pre-processing
 ![KN7ytI.png](https://s2.ax1x.com/2019/10/24/KN7ytI.png) <center> [4] </center>
 
 Normally we do a data normalization followed by a dimension reduction n->k (PCA). 
@@ -36,20 +36,7 @@ For these n columns of eigenvectors, get the first k columns as the dimension yo
 
 
 sample code : <br>
-import numpy as np
-
-#given m samples of n dimensional data
-n=500
-m=1000
-X=np.random.randn(m,n)
-#normalize within multiple samples of each feature, not across multiple features
-X-=np.mean(X, axis=0)
-
-cov= np.dot(X.T, X)/(X.shape[0]-1)
-U,S,V=np.linalg.svd(cov)
-k=100
-#X_reduced is a m*k matrix
-X_reduced=np.dot(X,U[:,0:k])
+![KN7xHJ.png](https://s2.ax1x.com/2019/10/24/KN7xHJ.png)
 
 
 ## 2. Initialization
