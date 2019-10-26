@@ -43,7 +43,7 @@ estimation.
 An integrated unit that can be mounted on both manned or unmaned aerial platforms was designed for this research. A high resolution camera (CanonEOS6D) was integrated in the unit for 3D reconstruction. In this experiment images were taken from a helicopter with 90% frontal overlap and 70% side overlap on average. The flight height was approximately 90 meters above ground with a speed of travel at 25-30 knots. A total of 9 evenly distributed GCPs at centimeter level accuracy were used together with 539 images, covering
 an area of 0.168km^2. A 1.89cm Ground Sampling Distance (GSD) has been achieved. 
 
-Full 3D reconstruction was done by Pix4Dmapper Pro, which is a commercial software package that uses structure from motion ([SFM](https://mary-xl.github.io/MarysBlog//2019/10/12/SFM/)) techniques. It corrects camera distortion, refines location using ground control points (GCPs), accounts for camera poses and generates 3D maps in the form of ortho-mosaic and 3D point cloud. We mainly use the 3D point cloud for further analysis:
+Full 3D reconstruction was done by Pix4Dmapper Pro, which is a commercial software package that uses structure from motion ([SFM](http://marysfishingpool.tk///2019/10/12/SFM/)) techniques. It corrects camera distortion, refines location using ground control points (GCPs), accounts for camera poses and generates 3D maps in the form of ortho-mosaic and 3D point cloud. We mainly use the 3D point cloud for further analysis:
 ![field.gif](https://i.loli.net/2019/10/11/KtXDkHJ4Ijl9orb.gif)
 
 ### Point cloud segmentation

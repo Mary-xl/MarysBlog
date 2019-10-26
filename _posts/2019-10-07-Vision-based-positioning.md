@@ -13,7 +13,7 @@ tags:
 ---
 
 _I started my PhD study from 2010 and spent the next 4 years on research topic "Vision-based Navigation with reality-based 3D Maps": 
-The key technology used include photogrammetry, computer vision geometry (<a href="https://mary-xl.github.io/MarysBlog//2019/10/12/SFM/"> SFM </a>), image processing and analysis, navigation and positioning._
+The key technology used include photogrammetry, computer vision geometry (<a href="http://marysfishingpool.tk///2019/10/12/SFM/"> SFM </a>), image processing and analysis, navigation and positioning._
 
 ## Introduction
 
