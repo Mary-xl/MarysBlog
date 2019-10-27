@@ -4,7 +4,7 @@ title:      Deep Learning Details
 subtitle:   Pre-processing (PCA), Initialization,
 date:       2019-10-15
 author:     Mary Li
-header-img: img/2019-10-15-bg.jpeg
+header-img: img/2019-10-12-bg.jpg
 catalog: true
 tags: 
     -  deep learning
