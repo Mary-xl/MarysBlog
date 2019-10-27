@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Model Evaluation Metrics
-subtitle:   Classification
+subtitle:   Classification and Regression
 date:       2019-10-22
 author:     Mary Li
 header-img: img/2019-10-12-bg.jpg
@@ -19,7 +19,7 @@ Accuracy=(True Positive +True Negative)/(True Positive+False Positive+True Negat
 Specify=True Negative/(False Positive+True Negative) <br>
 FPR=1- specify=False Positive/(False Positive+True Negative) <br>
 
-## Q1: F1 Score, AP (average precision) and mAP
+## 1. F1 Score, AP (average precision) and mAP
 While ideally both recall and precision are high, in reality there is always a trade-off between the two.
 
 ![K8q2IP.png](https://s2.ax1x.com/2019/10/22/K8q2IP.png)
@@ -40,7 +40,7 @@ above. Normally any zigzags in this curve are removed.
 
 A concept mAP (mean average precision) is often used as the average of AP. 
 
-## Q2: ROC
+## 2. ROC
 In reality, if you want more positives been predicted in your model, the rate of false positives will increase too.
 ROC Curve is used to describe the trade-off between TPR and FPR:
 
@@ -48,6 +48,6 @@ ROC Curve is used to describe the trade-off between TPR and FPR:
 <center> [1] </center>
 Like AP, we use the area underneath the curve as a measure. In this case the bigger the better.
 
-## Q3: 
+## 3: to be continued... 
 ## Reference
 [1] "Getting Started with Machine Learning" by Jim Liang <br>
