@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Deep Learning
+title:      "Deep Learning"
 subtitle:   Reading and Thought
 date:       2019-10-15
 author:     Mary Li
