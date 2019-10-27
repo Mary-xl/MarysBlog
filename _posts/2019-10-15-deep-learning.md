@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Deep Learning"
-subtitle:   Reading and Thought
+subtitle:   Reading and Digest
 date:       2019-10-15
 author:     Mary Li
 header-img: img/2019-10-15-bg.jpeg
