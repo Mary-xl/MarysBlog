@@ -39,7 +39,7 @@ Another important work (<a href="http://grail.cs.washington.edu/projects/rome// 
 <center>[3]</center>
 
 Therefore some researchers adopt "global method" for camera registration. The basic idea is to optimize the whole system based on motion avaraging[9].
-_Global SfM is different from incremental SfM in that it considers the entire view graph at the same time instead of incrementally adding more and more images to the Reconstruction. Global SfM methods have been proven to be very fast with comparable or better accuracy to incremental SfM approaches (See [5], [6], [7]), and they are much more readily parallelized.[8] _
+_Global SfM is different from incremental SfM in that it considers the entire view graph at the same time instead of incrementally adding more and more images to the Reconstruction. Global SfM methods have been proven to be very fast with comparable or better accuracy to incremental SfM approaches (See [5], [6], [7]), and they are much more readily parallelized[8]._
 <br>
 The advantage of such method is efficiency and avoiding drifting error due to global information. But it is more sensitive to outliers than incremental SFM. 
 (I'm personally not doing research in this direction so I just include some basic information here). <br>
