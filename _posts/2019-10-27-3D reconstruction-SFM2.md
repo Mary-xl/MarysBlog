@@ -44,7 +44,9 @@ _Global SfM is different from incremental SfM in that it considers the entire vi
 The advantage of such method is efficiency and avoiding drifting error due to global information. But it is more sensitive to outliers than incremental SFM. 
 (I'm personally not doing research in this direction so I just include some basic information here). <br>
  
-
+### 3. Bundle Adjustment
+As mentioned in previous article, bundle adjustment plays an essential role in SFM. It uses reprojection error as loss function to optimize a system parameters consisted of camera poses and 3D points.
+ 
 
 
 ## Reference
