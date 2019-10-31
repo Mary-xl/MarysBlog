@@ -53,9 +53,17 @@ many layers._
 #### Q1. What is bias and variance in machine learning?  How to solve the problem of under-fitting and over-fitting?
 ![Screenshot from 2019-10-15 22-30-49.png](https://i.loli.net/2019/10/16/OPiz863yUqhIKxG.png) [3]
 
-(1) In supervised learning, underfitting often take place when the model is too simple to capture the actual charateristic of the data. Normally it happens when there is not much data for training. It normally has a low variance but high bias.
+(1) In supervised learning, underfitting often take place when the model is too simple to capture the actual charateristic of the data. Normally it happens when there is not much data for training or we built our model too simple. It normally has a low variance but high bias. <br>
+<br>
 On the other hand, overfitting happens when the model fit too well for a specific dataset (e.g. training data) but not generalize enough for other datasets. It usually has low bias but high variance. Overfitting often take place when the model
-has been built too complicated. Therefore from this perspective, a good way to mitigate overfitting is to decrease the number of features (e.g. Drop-out); or use regularization to avoid certain weight parameters been too "powerful"*[]: 
+has been built too complicated. Therefore from this perspective, a good way to mitigate overfitting is to decrease the number of features or the influence of certain weights. The following are some commonly used methods: <br>
+- **drop out**: we randomly deactivate some "neurons" to reduce the risk of the model being too much affected by certain features. A hyperparameter drop rate needs to be defined (default 0.5).
+- **regularization**: to avoid certain weight parameters been too "powerful", we add punishment on the final loss function :
+![KI3pad.png](https://s2.ax1x.com/2019/10/31/KI3pad.png)
+    It is noticed that L2 loss is more sensitive to outliers.  Hyperparameter "regularization rate" needs to be defined. <br>
+- **early stopping**: stop the training process before it becomes overfitting. 
+
+
 
 (2) 
 #### Q2. How to calculate the number of parameters in the CNN?
