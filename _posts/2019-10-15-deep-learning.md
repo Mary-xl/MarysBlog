@@ -53,7 +53,7 @@ many layers._
 #### Q1. What is bias and variance in machine learning?  How to solve the problem of under-fitting and over-fitting?
 ![Screenshot from 2019-10-15 22-30-49.png](https://i.loli.net/2019/10/16/OPiz863yUqhIKxG.png) [3]
 
-(1) In supervised learning, underfitting often take place when the model is too simple to capture the actual charateristic of the data. Normally it happens when there is not much data for training or we built our model too simple. It normally has a low variance but high bias. <br>
+(1) In supervised learning, underfitting often take place when the model is too simple to capture the actual charateristic of the data. Normally it happens when there is not much data for training or we built our model too simple. It performs even poorly at training stage. It normally has a low variance but high bias. <br>
 <br>
 On the other hand, overfitting happens when the model fit too well for a specific dataset (e.g. training data) but not generalize enough for other datasets. It usually has low bias but high variance. Overfitting often take place when the model
 has been built too complicated. Therefore from this perspective, a good way to mitigate overfitting is to decrease the number of features or the influence of certain weights. The following are some commonly used methods: <br>
