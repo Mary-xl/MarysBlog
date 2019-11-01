@@ -13,7 +13,7 @@ _This post intends to summarise the evaluation metrics for both classification a
 
 [![KT2soQ.md.png](https://s2.ax1x.com/2019/11/01/KT2soQ.md.png)](https://imgchr.com/i/KT2soQ)
 <center>[1]</center>
-## Classification 
+## 1. Classification 
 
 ![K854BV.png](https://s2.ax1x.com/2019/10/22/K854BV.png)
 
@@ -23,7 +23,7 @@ Accuracy=(True Positive +True Negative)/(True Positive+False Positive+True Negat
 Specify=True Negative/(False Positive+True Negative) <br>
 FPR=1- specify=False Positive/(False Positive+True Negative) <br>
 
-### 1. F1 Score, AP (average precision) and mAP
+#### (1) F1 Score, AP (average precision) and mAP
 While ideally both recall and precision are high, in reality there is always a trade-off between the two.
 
 ![K8q2IP.png](https://s2.ax1x.com/2019/10/22/K8q2IP.png)
@@ -44,7 +44,7 @@ above. Normally any zigzags in this curve are removed.
 
 A concept mAP (mean average precision) is often used as the average of AP. 
 
-### 2. ROC
+#### (2) ROC
 In reality, if you want more positives been predicted in your model, the rate of false positives will increase too.
 ROC Curve is used to describe the trade-off between TPR and FPR:
 
