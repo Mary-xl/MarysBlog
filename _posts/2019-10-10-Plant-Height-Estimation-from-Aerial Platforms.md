@@ -48,6 +48,8 @@ Full 3D reconstruction was done by Pix4Dmapper Pro, which is a commercial softwa
 
 ### Point cloud segmentation
 
+[![KbTBVA.md.gif](https://s2.ax1x.com/2019/11/02/KbTBVA.md.gif)](https://imgchr.com/i/KbTBVA)
+<center> Plant Layer Segmentation </center>
 The point cloud segmentation process consists of three parts: plant layer segmentation, ground layer segmentation and ground surface smoothing. More specifically, we first segment the plant layer based on colour indices. 
 <br>
 [![KboZOH.md.png](https://s2.ax1x.com/2019/11/02/KboZOH.md.png)](https://imgchr.com/i/KboZOH)
@@ -62,7 +64,7 @@ filtering LiDAR point clouds and DEM generation, and it is increasingly being ad
 [![Kbodkq.md.png](https://s2.ax1x.com/2019/11/02/Kbodkq.md.png)](https://imgchr.com/i/Kbodkq)
 <center> Object Layer </center>
 The resulting point cloud, the bare ground, is still noisy. Moving least squares (MLS) surface reconstruction [2] is used to remove noise and build a smooth ground surface from the point cloud. Compared with other noise filtering and surface reconstruction methods, MLS is more powerful in dealing with intrinsic errors such as data irregularities due to small object measurements. The idea is to use an analytical function to approximate surfaces based on weighted local data points. It is being increasingly adopted as the standard definition of point set surfaces, and various algorithms in this class have been proposed [3]. Afterwards, colour information is further removed to reduce data size.
-![layers.gif](https://i.loli.net/2019/10/11/ZnduXRpwHOf9ij7.gif)
+![KbTI5q.png](https://s2.ax1x.com/2019/11/02/KbTI5q.png)
 
 ### Grid based ground height estimation
 
