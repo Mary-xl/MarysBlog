@@ -48,7 +48,7 @@ Full 3D reconstruction was done by Pix4Dmapper Pro, which is a commercial softwa
 
 ### Point cloud segmentation
 
-[![KbTBVA.md.gif](https://s2.ax1x.com/2019/11/02/KbTBVA.md.gif)](https://imgchr.com/i/KbTBVA)
+![Kqkj1O.gif](https://s2.ax1x.com/2019/11/02/Kqkj1O.gif)
 <center> Plant Layer Segmentation </center>
 The point cloud segmentation process consists of three parts: plant layer segmentation, ground layer segmentation and ground surface smoothing. More specifically, we first segment the plant layer based on colour indices. 
 <br>
