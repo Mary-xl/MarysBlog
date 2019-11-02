@@ -54,6 +54,6 @@ Like AP, we use the area underneath the curve as a measure. In this case the big
 
 ## 2. Regression
 [![KThklR.md.png](https://s2.ax1x.com/2019/11/01/KThklR.md.png)](https://imgchr.com/i/KThklR)
-
+to be continued....
 ## Reference
 [1] "Getting Started with Machine Learning" by Jim Liang <br>

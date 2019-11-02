@@ -30,7 +30,7 @@ a similar one  "feature-based voting" is used. Such a technique has been widely 
 
 ### 2. Camera registration
 As mentioned in previous article, camera registration is usually performed incrementally. It provides a robust way of adding new cameras into the system as it repeatedly perform bundle adjustment. It however takes long time due to this reason.
-Some important work are from (<a href="http://phototour.cs.washington.edu/ /"> photo tourism </a>) [3] where an initial pair was selected and the following cameras were registered depend on the number of common
+Some important work are from (<a href="http://phototour.cs.washington.edu/"> photo tourism </a>) [3] where an initial pair was selected and the following cameras were registered depend on the number of common
 points("tracks") with the available registered cameras. Altough the research group modified the research in 2008 to replace the initial pair to a minimum set of cameras representing the whole scene, it is essentially an incremental registration approach.
 Another important work (<a href="http://grail.cs.washington.edu/projects/rome// /"> Building Rome in a Day </a>) [4] introduced a new, parallel distributed matching system that can match massive collections of images very quickly. However, like SLAM,
  if these incremental adjustment approaches do not use global information as final "close loop check", there can be large drifting error.
