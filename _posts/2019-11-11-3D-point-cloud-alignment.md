@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      3D point cloud alignment
+title:      3D point cloud processing
 subtitle:   tests and discussion
 date:       2019-11-11
 author:     Mary Li
@@ -11,7 +11,7 @@ tags:
     - point cloud processing
 ---
 
-_This post intends to discuss some of the 3D point cloud alignment techniques based on data provided by [1] and the PCL library tutorial [2]_
+_This post intends to discuss some of the commonly used 3D point cloud processing techniques based on data provided by [1] and the PCL library tutorial [2]_
 
 ## Alignment Techniques
 ### ICP
@@ -19,6 +19,8 @@ ICP is a commonly used technique for precise alignment, where a rigid transforma
 In the following example, two identical 3D point clouds are aligned by different number of iterations:
 ![MljJln.png](https://s2.ax1x.com/2019/11/12/MljJln.png)
 [![MljMTS.md.png](https://s2.ax1x.com/2019/11/12/MljMTS.md.png)](https://imgchr.com/i/MljMTS)
+Noted that the transformation and rotation between two 3D point clouds can be discribed by a 3*3 rotation (3 DoF) abd 3*1 translation (3 DoF) matrices, or a
+4*4 matrix with 6 DoF like:
 
 With more iterations:
 ![Mlj0kF.png](https://s2.ax1x.com/2019/11/12/Mlj0kF.png)
@@ -38,8 +40,8 @@ It is noted that in this algorithm, several parameters need to be tuned for spec
 ![M1e0r8.png](https://s2.ax1x.com/2019/11/12/M1e0r8.png)
 <center>[2]</center>
 
-###
+### to be continued...
 
 ## Reference
 [1] http://www.pclcn.org/product/showproduct.php?lang=cn&id=20 <br>
-[2] http://pointclouds.org/documentation/tutorials/normal_distributions_transform.php
+[2] http://pointclouds.org/documentation/tutorials/ <br>
