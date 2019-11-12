@@ -35,9 +35,11 @@ Aligned point cloud:
 [![M1ZFkd.md.png](https://s2.ax1x.com/2019/11/12/M1ZFkd.md.png)](https://imgchr.com/i/M1ZFkd)
 
 It is noted that in this algorithm, several parameters need to be tuned for specific experiments, depending on the actual scale.
-[img]https://s2.ax1x.com/2019/11/12/M1e0r8.png[/img]
+![M1e0r8.png](https://s2.ax1x.com/2019/11/12/M1e0r8.png)
 <center>[2]</center>
 
+###
+
 ## Reference
-[1] http://www.pclcn.org/product/showproduct.php?lang=cn&id=20
+[1] http://www.pclcn.org/product/showproduct.php?lang=cn&id=20 <br>
 [2] http://pointclouds.org/documentation/tutorials/normal_distributions_transform.php
