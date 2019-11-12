@@ -4,7 +4,7 @@ title:      3D point cloud processing
 subtitle:   tests and discussion
 date:       2019-11-11
 author:     Mary Li
-header-img: img/2019-10-10-bg.png
+header-img: img/2019-10-12-bg.png
 catalog: true
 tags:
     - 3D mapping and reconstruction
@@ -20,7 +20,7 @@ In the following example, two identical 3D point clouds are aligned by different
 ![MljJln.png](https://s2.ax1x.com/2019/11/12/MljJln.png)
 [![MljMTS.md.png](https://s2.ax1x.com/2019/11/12/MljMTS.md.png)](https://imgchr.com/i/MljMTS)
 Noted that the transformation and rotation between two 3D point clouds can be discribed by a 3*3 rotation (3 DoF) abd 3*1 translation (3 DoF) matrices, or a
-4*4 matrix with 6 DoF like:
+4*4 matrix with 6 DoF.
 
 With more iterations:
 ![Mlj0kF.png](https://s2.ax1x.com/2019/11/12/Mlj0kF.png)
