@@ -13,6 +13,7 @@ tags:
 
 ## 1. Excerpt
 
+### 1.1 RPN 
 [![lEq12D.md.png](https://s2.ax1x.com/2019/12/27/lEq12D.md.png)](https://imgchr.com/i/lEq12D)
 <center> [1] </center> <br>
 
@@ -28,5 +29,12 @@ backbone CNN until the added loss from the two subnetwork smaller than certain t
 ![lELloq.png](https://s2.ax1x.com/2019/12/27/lELloq.png)
 <center> [3] </center> <br>
 
+### 1.2 anchor
+[![lVnt1O.md.png](https://s2.ax1x.com/2019/12/27/lVnt1O.md.png)](https://imgchr.com/i/lVnt1O)
+ ![lVn8tx.png](https://s2.ax1x.com/2019/12/27/lVn8tx.png)
+ <center> [1] </center> <br>
+ 
+ 
+ 
 ## Reference
 [2]https://au.mathworks.com/help/vision/ug/getting-started-with-r-cnn-fast-r-cnn-and-faster-r-cnn.html <br>
