@@ -24,7 +24,10 @@ feature map is also used in the following Fast R-CNN detection.
 ![lEXlGV.png](https://s2.ax1x.com/2019/12/27/lEXlGV.png)
 <center> [2] </center> <br>
 
-(2) In the training process, both RPN and Fast R-CNN generate loss. These two sets of loss (2 stages) alternate training the
+(2) Two losses for RPN region proposal and Fast R-CNN detection: 
+![lVnDAI.png](https://s2.ax1x.com/2019/12/27/lVnDAI.png)
+<center> [1] </center> <br>
+ In the training process, both RPN and Fast R-CNN generate loss. These two sets of loss (2 stages) alternate training the
 backbone CNN until the added loss from the two subnetwork smaller than certain threshold.
 ![lELloq.png](https://s2.ax1x.com/2019/12/27/lELloq.png)
 <center> [3] </center> <br>
