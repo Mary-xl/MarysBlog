@@ -26,7 +26,8 @@ The Fast R-CNN uses a VGG-16 backbone with the following modifications:
  In RCNN each region produced by selective search was put into the CNN for feature extraction. Since VGG16 has
  FC layers after conv layers, the author has to make sure that the input regions are adjusted to the same size, thus
  warping/croping the regions. It causes information distortion and loss in the process. SPP-Net is able to tackle this 
- problem by ROI pooling. Any size of the regions can be used as input.
+ problem by ROI pooling. Any size of the regions can be used as input. Moreover, without the cropping/warping process 
+ on the original image, the robustness of the network is largely improved.
  [![liA3DO.md.png](https://s2.ax1x.com/2019/12/25/liA3DO.md.png)](https://imgchr.com/i/liA3DO)
   <center> [2] </center>
  <br>
