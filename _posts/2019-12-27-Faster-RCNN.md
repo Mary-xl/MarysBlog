@@ -27,7 +27,8 @@ feature map is also used in the following Fast R-CNN detection.
 The benefit of such usage of RPN are:<br>
 -- Largely increase the speed (FPS) and reduce computation cost, since Selective Search has been replaced; <br>
 -- Increase the accuracy (mAP) of detection, since region proposal was done on feature map (higher level of features) rather than
-on the original image.
+on the original image. In RCNN for instance, the detection accuracy was based on the performance of selective search on original image.
+
 ![lVMs41.png](https://s2.ax1x.com/2019/12/27/lVMs41.png)
 <center> [1] </center> <br>
 [![lVQ3rD.md.png](https://s2.ax1x.com/2019/12/27/lVQ3rD.md.png)](https://imgchr.com/i/lVQ3rD)
@@ -45,7 +46,21 @@ backbone CNN until the added loss from the two subnetwork smaller than certain t
  ![lVn8tx.png](https://s2.ax1x.com/2019/12/27/lVn8tx.png)
  <center> [1] </center> <br>
  
+## 2. Use FPN in RPN
+In the original paper (baseline) for Faster R-CNN, the RPN uses a single feature map from backbone CNN extraction. 
+[![luS6pQ.md.png](https://s2.ax1x.com/2019/12/29/luS6pQ.md.png)](https://imgchr.com/i/luS6pQ)
+ <center> [4] </center> <br>
+Introducing FPN to RPN will increase the ability of object detection on various scales, since it generates the ROI from multiple layers of 
+feature maps:
+"Based on the size of the ROI, we select the feature map layer in the most proper scale to extract the feature patches."
+[![lupYNT.md.png](https://s2.ax1x.com/2019/12/29/lupYNT.md.png)](https://imgchr.com/i/lupYNT)
+ <center> [4] </center> <br>
  
- 
+ It is noted the most outstanding improvement was on the AR (average recall: the ability to capture objects):
+ [![lupwv9.md.png](https://s2.ax1x.com/2019/12/29/lupwv9.md.png)](https://imgchr.com/i/lupwv9)
+  <center> [4] </center> <br>
+  
+  
 ## Reference
-[2]https://au.mathworks.com/help/vision/ug/getting-started-with-r-cnn-fast-r-cnn-and-faster-r-cnn.html <br>
+[2] https://au.mathworks.com/help/vision/ug/getting-started-with-r-cnn-fast-r-cnn-and-faster-r-cnn.html <br>
+[4] https://medium.com/@jonathan_hui/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c <br>
