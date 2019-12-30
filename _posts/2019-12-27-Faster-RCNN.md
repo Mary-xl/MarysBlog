@@ -11,9 +11,9 @@ tags:
     -  paper digest 
 ---
 
-## 1. Excerpt
+## 1. RPN
 
-### 1.1 RPN 
+### 1.1 RPN benefit
 [![lEq12D.md.png](https://s2.ax1x.com/2019/12/27/lEq12D.md.png)](https://imgchr.com/i/lEq12D)
 <center> [1] </center> <br>
 
@@ -41,19 +41,22 @@ backbone CNN until the added loss from the two subnetwork smaller than certain t
 ![lELloq.png](https://s2.ax1x.com/2019/12/27/lELloq.png)
 <center> [3] </center> <br>
 
-## 2. Anchor and RPN training
+### 1.2 Anchor and RPN training
  (1) During the training of RPN, the first step is the generation of anchor boxes: 
 [![lQtrM8.md.png](https://s2.ax1x.com/2019/12/30/lQtrM8.md.png)](https://imgchr.com/i/lQtrM8)
 <center> [5] </center> <br>
  (2) The second step is to  generate the targets of the RPN: pos/neg classification, offset(anchor boxes, GT):
  [![lQNxts.md.png](https://s2.ax1x.com/2019/12/30/lQNxts.md.png)](https://imgchr.com/i/lQNxts)
  <center> [5] </center> <br>
+ For pos/neg targets generation:
+ [![lQdvAe.md.png](https://s2.ax1x.com/2019/12/30/lQdvAe.md.png)](https://imgchr.com/i/lQdvAe)
+ 
 
 [![lVnt1O.md.png](https://s2.ax1x.com/2019/12/27/lVnt1O.md.png)](https://imgchr.com/i/lVnt1O)
  ![lVn8tx.png](https://s2.ax1x.com/2019/12/27/lVn8tx.png)
  <center> [1] </center> <br>
  
-## 3. Use FPN in RPN
+### 1.3 Use FPN in RPN
 In the original paper (baseline) for Faster R-CNN, the RPN uses a single feature map from backbone CNN extraction. 
 [![luS6pQ.md.png](https://s2.ax1x.com/2019/12/29/luS6pQ.md.png)](https://imgchr.com/i/luS6pQ)
  <center> [4] </center> <br>
