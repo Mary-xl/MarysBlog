@@ -41,12 +41,19 @@ backbone CNN until the added loss from the two subnetwork smaller than certain t
 ![lELloq.png](https://s2.ax1x.com/2019/12/27/lELloq.png)
 <center> [3] </center> <br>
 
-### 1.2 anchor
+## 2. Anchor and RPN training
+ (1) During the training of RPN, the first step is the generation of anchor boxes: 
+[![lQtrM8.md.png](https://s2.ax1x.com/2019/12/30/lQtrM8.md.png)](https://imgchr.com/i/lQtrM8)
+<center> [5] </center> <br>
+ (2) The second step is to  generate the targets of the RPN: pos/neg classification, offset(anchor boxes, GT):
+ [![lQNxts.md.png](https://s2.ax1x.com/2019/12/30/lQNxts.md.png)](https://imgchr.com/i/lQNxts)
+ <center> [5] </center> <br>
+
 [![lVnt1O.md.png](https://s2.ax1x.com/2019/12/27/lVnt1O.md.png)](https://imgchr.com/i/lVnt1O)
  ![lVn8tx.png](https://s2.ax1x.com/2019/12/27/lVn8tx.png)
  <center> [1] </center> <br>
  
-## 2. Use FPN in RPN
+## 3. Use FPN in RPN
 In the original paper (baseline) for Faster R-CNN, the RPN uses a single feature map from backbone CNN extraction. 
 [![luS6pQ.md.png](https://s2.ax1x.com/2019/12/29/luS6pQ.md.png)](https://imgchr.com/i/luS6pQ)
  <center> [4] </center> <br>
@@ -64,3 +71,4 @@ feature maps:
 ## Reference
 [2] https://au.mathworks.com/help/vision/ug/getting-started-with-r-cnn-fast-r-cnn-and-faster-r-cnn.html <br>
 [4] https://medium.com/@jonathan_hui/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c <br>
+[5] http://www.julyedu.com
