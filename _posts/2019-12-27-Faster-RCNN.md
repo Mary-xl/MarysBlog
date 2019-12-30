@@ -50,8 +50,15 @@ backbone CNN until the added loss from the two subnetwork smaller than certain t
  <center> [5] </center> <br>
  For pos/neg targets generation:
  [![lQdvAe.md.png](https://s2.ax1x.com/2019/12/30/lQdvAe.md.png)](https://imgchr.com/i/lQdvAe)
+ (3) The third step is to use the network to do forward pass, loss with targets, backward to do training on the RPN.
+ [![lQRw7R.md.png](https://s2.ax1x.com/2019/12/30/lQRw7R.md.png)](https://imgchr.com/i/lQRw7R)
+  <center> [5] </center> <br>
+ (4) After training, a size 38*57 feature map can generate 38*57*9=19494 region proposals. Not all these proposals will 
+ be forward to ROI pooling. Instead, a NMS is used to filter redundent proposals, retaining only top score proposals with no
+ big IoU with other top score proposals.
  
-
+ 
+ 
 [![lVnt1O.md.png](https://s2.ax1x.com/2019/12/27/lVnt1O.md.png)](https://imgchr.com/i/lVnt1O)
  ![lVn8tx.png](https://s2.ax1x.com/2019/12/27/lVn8tx.png)
  <center> [1] </center> <br>
