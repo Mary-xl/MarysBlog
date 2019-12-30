@@ -45,16 +45,26 @@ backbone CNN until the added loss from the two subnetwork smaller than certain t
  (1) During the training of RPN, the first step is the generation of anchor boxes: 
 [![lQtrM8.md.png](https://s2.ax1x.com/2019/12/30/lQtrM8.md.png)](https://imgchr.com/i/lQtrM8)
 <center> [5] </center> <br>
- (2) The second step is to  generate the targets of the RPN: pos/neg classification, offset(anchor boxes, GT):
+ (2) The second step is to  generate the samples for the RPN training: pos/neg classification, offset(anchor boxes, GT):
  [![lQNxts.md.png](https://s2.ax1x.com/2019/12/30/lQNxts.md.png)](https://imgchr.com/i/lQNxts)
  <center> [5] </center> <br>
  For pos/neg targets generation:
- [![lQdvAe.md.png](https://s2.ax1x.com/2019/12/30/lQdvAe.md.png)](https://imgchr.com/i/lQdvAe)
+ ![llpmgU.png](https://s2.ax1x.com/2019/12/30/llpmgU.png)
+ Each image (feature map) is able to generate around 17000 anchors. Among these anchors, the "AnchorTargetCreator"
+ came to pick samples for training iterations:<br>
+ - For each gt box, find the anchor with highest IoU and use this anchor as pos sample;
+ - Randomly pick less than 128 anchors with IoU(anchor, gt)>0.7 as positive samples in the batch. 
+ Total pos samples = above two step picks =<128
+ - Randomly pick >= 128 anchors with IoU(anchor,gt)<0.3 as negative samples in the batch.
+ Use a 256 batch for training.
+ 
  (3) The third step is to use the network to do forward pass, loss with targets, backward to do training on the RPN.<br>
  Note that in the following loss calculation process, p* is obtained by IoU(anchor box, gt)>0.7
  [![lQRw7R.md.png](https://s2.ax1x.com/2019/12/30/lQRw7R.md.png)](https://imgchr.com/i/lQRw7R)
   <center> [5] </center> <br>
- (4) After training, a size 38 * 50 feature map can generate 38 * 50 * 9=17100 region proposals. Not all these proposals will 
+  
+### 1.3 Proposal: RPN generate ROI
+  After training, a size 38 * 50 feature map can generate 38 * 50 * 9=17100 region proposals. Not all these proposals will 
  be forward to ROI pooling. Instead, a NMS is used to filter redundent proposals, retaining only top score proposals with no
  big IoU with other top score proposals.
  
