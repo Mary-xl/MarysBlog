@@ -45,7 +45,7 @@ backbone CNN until the added loss from the two subnetwork smaller than certain t
  (1) During the training of RPN, the first step is the generation of anchor boxes: 
 [![lQtrM8.md.png](https://s2.ax1x.com/2019/12/30/lQtrM8.md.png)](https://imgchr.com/i/lQtrM8)
 <center> [5] </center> <br>
- (2) The second step is to  generate the samples for the RPN training: pos/neg classification, offset(anchor boxes, GT):
+ (2) The second step is to  generate the samples for the RPN training:  pos/neg classification, offset(anchor boxes, GT):
  [![lQNxts.md.png](https://s2.ax1x.com/2019/12/30/lQNxts.md.png)](https://imgchr.com/i/lQNxts)
  <center> [5] </center> <br>
  For pos/neg targets generation:
