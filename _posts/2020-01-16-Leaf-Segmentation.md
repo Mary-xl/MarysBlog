@@ -11,8 +11,7 @@ tags:
 ---
 
 ## Dataset
-The dataset was composed of 10,000 synthetically generated Arabidopsis plant images obtained from 
-https://research.csiro.au/robotics/our-work/databases/synthetic-arabidopsis-dataset/. Each image (500x500) has
+The dataset was composed of 10,000 synthetically generated Arabidopsis plant images. Each image (500x500) has
 a png color mask (500x500):
 ![1pPhZT.png](https://s2.ax1x.com/2020/01/18/1pPhZT.png)
 ![1pPjeK.png](https://s2.ax1x.com/2020/01/18/1pPjeK.png)
@@ -56,7 +55,15 @@ the opimizer from SGD to Adagrad and it successfully enables the optimizer step 
 Question: However, around apoch 60 to 70, the loss stops going down again. What strategies should I take? Why previously I changed
 from SGD to Adagrad and it helps? <br>
 
+## Result
+Based on the current model (not completed converged though), I did some evaluation:
 
+[![1pVUMj.md.png](https://s2.ax1x.com/2020/01/18/1pVUMj.md.png)](https://imgchr.com/i/1pVUMj)
 
+[![1pVass.md.png](https://s2.ax1x.com/2020/01/18/1pVass.md.png)](https://imgchr.com/i/1pVass)
+
+[![1pVyJU.md.png](https://s2.ax1x.com/2020/01/18/1pVyJU.md.png)](https://imgchr.com/i/1pVyJU)
+
+[![1pV6WF.md.png](https://s2.ax1x.com/2020/01/18/1pV6WF.md.png)](https://imgchr.com/i/1pV6WF)
 
  
