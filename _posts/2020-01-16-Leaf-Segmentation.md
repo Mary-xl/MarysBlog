@@ -10,7 +10,7 @@ tags:
     -  deep learning
 ---
 
-## Dataset
+## 1. Dataset
 The dataset was composed of 10,000 synthetically generated Arabidopsis plant images. Each image (500x500) has
 a png color mask (550x550):
 ![1pPhZT.png](https://s2.ax1x.com/2020/01/18/1pPhZT.png)
@@ -23,7 +23,7 @@ value of the gray scale:
 Then the dataset was split into 0.8:0.2 for training and validation. The directory organization follows 
 the same pattern as data-science-bowl-2018 used in https://github.com/matterport/Mask_RCNN,
 
-## Training
+## 2. Training
 The model was initialised with weights trained on the COCO dataset. The backbone is  ResNet101 with FPN, 
 which is able to capture objects of various scales via a top-down pathway and lateral connections. 
 Because of this structure, we need to set up 5 anchor sizes. The original implementation uses 32 as the 
@@ -52,7 +52,7 @@ the opimizer from SGD to Adagrad and it successfully enables the optimizer step 
 **Question: However, around apoch 60 to 70, the loss stops going down again. What strategies should I take? Why previously I changed
 from SGD to Adagrad and it helps? <br>**
 
-## Result and discussion
+## 3. Result and discussion
 Based on the current model (not completed converged though), I did some evaluation:
 
 [![1pVUMj.md.png](https://s2.ax1x.com/2020/01/18/1pVUMj.md.png)](https://imgchr.com/i/1pVUMj)
@@ -64,7 +64,7 @@ Based on the current model (not completed converged though), I did some evaluati
 [![1pV6WF.md.png](https://s2.ax1x.com/2020/01/18/1pV6WF.md.png)](https://imgchr.com/i/1pV6WF)
 
 
-### Backbone and feature extraction
+### 3.1 Backbone and feature extraction
 In the following I will generate more detailed information to inspect the training process based on https://github.com/matterport/Mask_RCNN:
 
 #### ResNet with FPN
@@ -87,15 +87,16 @@ our method can run at 6 FPS on a GPU and thus is a practical and accurate soluti
  * The author adopt batch normalization (BN) right after each convolution and before activation, initialize the weights as in and train all plain/residual nets from scratch.They do not use dropout .  
 
 
-### Stage 1: Region Proposal Network
+### 3.2 Stage 1: Region Proposal Network
 #### RPN Targets 
-"<font color=Coral>We adapt RPN by replacing the single-scale feature map with our FPN</font>. We attach <font color=Coral>a head of the same design</font> (3×3 conv and two sibling 1×1 convs) to
-<font color=Coral>each level</font> on our feature pyramid. <font color=Coral>Because the head slides densely over all locations in all pyramid levels, it is not necessary to have multi-scale anchors
-on a specific level.</font> Instead, we <font color=Coral>assign anchors of a single scale to each level</font>. Formally, we define the anchors to have areas of <font color=Coral>{$32^2$ , $64^2$ , $128^2$ , $256^2$ , $512^2$ }</font> pixels
-on <font color=Coral>{P2, P3, P4, P5, P6} respectively</font>. We also use anchors of multiple aspect ratios <font color=Coral>{1:2, 1:1, 2:1} at each level</font>. So in total there are <font color=Coral>15</font> anchors over the pyramid."[1] 
+"We adapt RPN by replacing the single-scale feature map with our FPN. We attach a head of the same design (3×3 conv and two sibling 1×1 convs) to
+each level on our feature pyramid. Because the head slides densely over all locations in all pyramid levels, it is not necessary to have multi-scale anchors
+on a specific level.Instead, we <font color=Coral>assign anchors of a single scale to each level. Formally, we define the anchors to have areas of {$32^2$ , $64^2$ , $128^2$ , $256^2$ , $512^2$ } pixels
+on {P2, P3, P4, P5, P6} respectively</font>. We also use anchors of multiple aspect ratios {1:2, 1:1, 2:1} at each level. So in total there are 15 sizes anchors over the pyramid."[1] 
 
 Noted that in this leaf segmentation case, the anchor size for the 5 levels are chosen as [8,16,32,64,128]: <br>
-The total anchors' number per image is:
+The total anchors' number per image is:<br><br>
+
 P2:512/4(stride)=128 size, anchor_num=128*128*3,  the chosen anchor (1x1 ratio) covers 8x8 pixels in the original image<br>
 P3:512/8=64,anchor_num=64*64*3, the chosen anchor covers 16*16 pixels in the original image  <br>
 P4:512/16=32, anchor_num=32*32*3, the chosen anchor covers 32*32 pixels in the original image <br>
@@ -106,9 +107,19 @@ Sum(P2+P3+P4+P5+P6)=65472<br> <br>
 In the training process, RPN targets are generated in each batch, with 256 samples/batch and IoU>0.7 positive, IoU<0.3 as negative:
 [![1poPXR.md.png](https://s2.ax1x.com/2020/01/18/1poPXR.md.png)](https://imgchr.com/i/1poPXR)
 
-
-
  RPN_TRAIN_ANCHORS_PER_IMAGE = 256 so target_rpn_bbox.shape=(256,4)<br>
  
- 
+#### RPN Predictions
+[![19pOBT.md.png](https://s2.ax1x.com/2020/01/18/19pOBT.md.png)](https://imgchr.com/i/19pOBT) 
+
+It has 4 steps: <br>
+(1) Based on the prediction of confidence scores (objectness score), obtain the top 6000 proposals (anchors);<br>
+[![199Y5Q.md.png](https://s2.ax1x.com/2020/01/18/199Y5Q.md.png)](https://imgchr.com/i/199Y5Q)
+
+(2) Using their corresponding bbox offset values to get their adjusted bbox on the original image;<br>
+(3) Remove the ones that exceed the image boundary;<br>
+[![199yaF.md.png](https://s2.ax1x.com/2020/01/18/199yaF.md.png)](https://imgchr.com/i/199yaF)
+
+(4) Using NMS to get the final 2000 proposals in training/ 1000 proposals in evaluation (roi). <br>
+[![199oVO.md.png](https://s2.ax1x.com/2020/01/18/199oVO.md.png)](https://imgchr.com/i/199oVO)
  
