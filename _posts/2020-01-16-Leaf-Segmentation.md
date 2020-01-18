@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      "Leaf Segmentation based on Mask RCNN"
@@ -35,14 +34,28 @@ which is a biggest feature map layer, 16 for P3, 32 for P4, 64 for P5, 128 for P
 
 Question:The image was resized to 512x512 for training since it uses a ResNet as backbone and its size has to be integerx64.
 On P2 level, the stride is 4, then the feature map was 128x128.  Each point at the feature map covers 4x4 area in the original
-image, but since it has a 8 pixel anchor size, it is true that it covers a 8x8 anchor area with 3 different aspect ratios? 
+image, but since it has a 8 pixel anchor size, it is true that it covers a 8x8 anchor area with 3 different aspect ratios? <br>
 
-The training is actually a two step process: first  I trained 10 epoches on the heads layers, 
+The training is actually a two step process: first  I trained 9 epoches on the heads layers, 
 without resnet backbone (including the top-down path of FPN, RPN, and the heads for classification, bbox reggression
 and mask generation). And another 70 epoches on “all layers”. The reason for this is because the backbone has been 
 pre-trained on COCO, but the heads parameters are randomly initialised. Such training step can be beneficial to the 
 network to converge. Sometimes if we only have a small dataset, which we usually do in plant science study, we 
 can also freeze the pre-trained backbone and only train the heads.
+![1pAjcd.png](https://s2.ax1x.com/2020/01/18/1pAjcd.png)
+
+During the training of the second stage (all layers), the optimization process encountered two plateaus:<br>
+One from around epoch 23 to epoch 40<br>
+[![1pEdUK.md.png](https://s2.ax1x.com/2020/01/18/1pEdUK.md.png)](https://imgchr.com/i/1pEdUK)
+[![1pEBCD.md.png](https://s2.ax1x.com/2020/01/18/1pEBCD.md.png)](https://imgchr.com/i/1pEBCD)
+
+I first change the learning rate from  LEARNING_RATE = 0.001 to 0.0001, but the loss didn't go down (epoch 30 to 40). Then I changed 
+the opimizer from SGD to Adagrad and it successfully enables the optimizer step over the plateau.
+![1pEHrn.png](https://s2.ax1x.com/2020/01/18/1pEHrn.png)
+
+Question: However, around apoch 60 to 70, the loss stops going down again. What strategies should I take? Why previously I changed
+from SGD to Adagrad and it helps? <br>
+
 
 
 
