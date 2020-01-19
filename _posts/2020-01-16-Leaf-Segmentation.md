@@ -49,8 +49,6 @@ I first change the learning rate from  LEARNING_RATE = 0.001 to 0.0001, but the 
 the opimizer from SGD to Adagrad and it successfully enables the optimizer step over the plateau.
 ![1pEHrn.png](https://s2.ax1x.com/2020/01/18/1pEHrn.png)
 
-**Question: However, around apoch 60 to 70, the loss stops going down again. What strategies should I take? Why previously I changed
-from SGD to Adagrad and it helps? <br>**
 
 ## 3. Result and discussion
 Based on the current model (not completed converged though), I did some evaluation:
