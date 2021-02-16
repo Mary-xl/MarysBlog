@@ -40,7 +40,7 @@ network to converge. Sometimes if we only have a small dataset, which we usually
 can also freeze the pre-trained backbone and only train the heads.
 ![1pAjcd.png](https://s2.ax1x.com/2020/01/18/1pAjcd.png)
 
-During the training of the second stage (all layers), the optimization process encountered two plateaus:<br>
+During the training of the second stage (all layers), the optimization process encountered two plateaus and overfit after 45 epochs:<br>
 One from around epoch 23 to epoch 40<br>
 [![1pEdUK.md.png](https://s2.ax1x.com/2020/01/18/1pEdUK.md.png)](https://imgchr.com/i/1pEdUK)
 [![1pEBCD.md.png](https://s2.ax1x.com/2020/01/18/1pEBCD.md.png)](https://imgchr.com/i/1pEBCD)
