@@ -27,16 +27,16 @@ ground in form of gridded ground controids. It not only
 enables plant height calculation at plot level, but can also
 be applied to various shapes of canopies for different types
 of plants. The only manual input required is the marking of
-Ground Control Points (GCP) and contour labeling of the
+Ground Control Points (GCP) and contour labeling(annotation) of the
 Regions of Interest (ROI) in the plot detection process.
 
 ## METHODOLOGY
 
 The proposed processing pipeline consists of multiple steps,
 as shown in Figure 1: 1) image acquisition and filtering
-; 2) generation of dense 3D point cloud; 3) point cloud
-segmentation; 4) ground height estimation; 5) plant height
-estimation.
+; 2) plot automated detection from the ortho-mosaics 3) generation of dense 3D point cloud; 4) point cloud
+segmentation; 5) ground height estimation; 6) plant height
+estimation. In this paper we focused on 3-6 and deep learning based plot detection will discussed separately in another paper.
 
 ### Image Acquisition and 3D reconstruction
 
