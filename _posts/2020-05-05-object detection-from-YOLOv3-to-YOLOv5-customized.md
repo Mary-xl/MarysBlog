@@ -44,10 +44,21 @@ Following this trend, more and more new powerful networks have been invented.
 "Recent work has shown that convolutional networks can be substantially deeper, more accurate, and efficient to train if
 they contain shorter connections between layers close to the input and those close to the output. In this paper, we embrace 
 this observation and introduce the Dense Convolutional Network (DenseNet)". In DenseNet, for each layer, the feature-maps 
-of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers. It brings 
+of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers. In 
+other words, each layer has direct access to the gradients from the loss function and the original input image. It brings 
 the following advantages:
 (1) mitigate feature vanishing problem;
 (2) strengthen feature propagation;
 (3) encourage feature reuse;
 (4) decrease number of parameters.
+[![694tNF.png](https://s3.ax1x.com/2021/02/28/694tNF.png)](https://imgtu.com/i/694tNF)
 
+The following shows the development from normal Covnets, to ResNet to DenseNet, note that ResNet uses the element-wise addition
+and DenseNet use feature map concatenamtion:
+[![69qQm9.png](https://s3.ax1x.com/2021/02/28/69qQm9.png)](https://imgtu.com/i/69qQm9)
+
+
+A further improvement was made by CSPNet, which designs a partial transition layer to maximize the difference of gradient
+combination so as to prevent distinct features from learning duplicate gradient information. 
+
+[![69XZfP.png](https://s3.ax1x.com/2021/02/28/69XZfP.png)](https://imgtu.com/i/69XZfP)
