@@ -58,7 +58,15 @@ and DenseNet use feature map concatenamtion:
 [![69qQm9.png](https://s3.ax1x.com/2021/02/28/69qQm9.png)](https://imgtu.com/i/69qQm9)
 
 
-A further improvement was made by CSPNet, which designs a partial transition layer to maximize the difference of gradient
-combination so as to prevent distinct features from learning duplicate gradient information. 
-
 [![69XZfP.png](https://s3.ax1x.com/2021/02/28/69XZfP.png)](https://imgtu.com/i/69XZfP)
+A further improvement was made by CSPNet, which designs a partial transition layer to maximize the difference of gradient
+combination so as to prevent distinct features from learning duplicate gradient information. The authors believe the large
+computation cost during the inference is caused by repetative gradient usage. "The main purpose of designing CSPNet is to
+enable this architecture to achieve a richer gradient combination while reducing the amount of computation. This aim
+is achieved by partitioning feature map of the base layer into two parts and then merging them through a proposed
+cross-stage hierarchy. Our main concept is to make the gradient flow propagate through different network paths
+by splitting the gradient flow." Their experiments show that by integrating CSPNet blocks into available backbones and detection
+networks, it reduces computational cost and maintain/increase the accuracy. That is exactly why it has been used in YOLOv4
+and YOLOv5. 
+[![6C3qnf.png](https://s3.ax1x.com/2021/02/28/6C3qnf.png)](https://imgtu.com/i/6C3qnf)
+
