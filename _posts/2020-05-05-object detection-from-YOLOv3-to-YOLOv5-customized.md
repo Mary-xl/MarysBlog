@@ -6,8 +6,8 @@ author:     Mary Li
 header-img:
 catalog: true
 tags:
-    - deep learning
-    - object detection
+- deep learning
+- object detection
 ---
 _In 2020, I started a new project on video surveillance, where deep learning based techniques like object detection, multiple object tracking, human action recognition are heavily used and modified for our own application._
 
