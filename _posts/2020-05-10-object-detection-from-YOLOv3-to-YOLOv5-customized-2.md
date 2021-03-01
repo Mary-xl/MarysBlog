@@ -57,19 +57,19 @@ It also introduces the following new features:
 Compared with YOLOv4, YOLOv5 has its own new characristics and the author provides 4 versions for different requirements.
 [![6idz8K.png](https://s3.ax1x.com/2021/03/01/6idz8K.png)](https://imgtu.com/i/6idz8K)
 
-### Backbone:
+#### -Backbone:
 [1] In uses CSP block not only in the backbone like YOLOv4, it also uses in the neck section;
 [2] It uses "Focus" structure which enables the down sampling without too much information loss;
 
-###Neck:
+#### -Neck:
 FPN+PAN
 [![6i0GeH.png](https://s3.ax1x.com/2021/03/01/6i0GeH.png)](https://imgtu.com/i/6i0GeH)
 
-### Loss:
+#### Loss:
 GIOU_Loss for bounding box loss, while YOLOv4 uses CIOU_Loss.
 Yolov4 uses DIOU_Loss with DIOU_nms, while Yolov5 uses weighted nms.
 
-### Its 4 structures:
+#### Its 4 structures:
 [![6i00l8.png](https://s3.ax1x.com/2021/03/01/6i00l8.png)](https://imgtu.com/i/6i00l8)
 It basically uses different width and depth for 4 different versions without much changes. For instance in yolov5s CSP it 
 uses 1 res-block :CSP_1, and Yolov5m with CSP_2, Yolov5l with CSP_3, Yolov5x CSP_4 etc.
