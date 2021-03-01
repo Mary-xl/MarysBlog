@@ -41,7 +41,7 @@ We can also find that such residual block uses few times at shallow layers and m
 The overall structure looks like the following:
 [![6iUNxe.png](https://s3.ax1x.com/2021/03/01/6iUNxe.png)](https://imgtu.com/i/6iUNxe)
 
-##YOLOv4
+## YOLOv4
 YOLOv4 used the most advanced network architectures such as Cross-Stage-Partial-connections for its advantage on reduced
 computation cost without sacrificing accuracy and introduced many new features into the system. 
 
@@ -53,11 +53,11 @@ It also introduces the following new features:
 [3] Neck uses SPP、FPN+PAN structure;
 [4] In loss calculation it uses CIOU_Loss、DIOU_nms;
 
-##YOLOv5
+## YOLOv5
 Compared with YOLOv4, YOLOv5 has its own new characristics and the author provides 4 versions for different requirements.
 [![6idz8K.png](https://s3.ax1x.com/2021/03/01/6idz8K.png)](https://imgtu.com/i/6idz8K)
 
-###Backbone:
+### Backbone:
 [1] In uses CSP block not only in the backbone like YOLOv4, it also uses in the neck section;
 [2] It uses "Focus" structure which enables the down sampling without too much information loss;
 
@@ -65,16 +65,16 @@ Compared with YOLOv4, YOLOv5 has its own new characristics and the author provid
 FPN+PAN
 [![6i0GeH.png](https://s3.ax1x.com/2021/03/01/6i0GeH.png)](https://imgtu.com/i/6i0GeH)
 
-###Loss:
+### Loss:
 GIOU_Loss for bounding box loss, while YOLOv4 uses CIOU_Loss.
 Yolov4 uses DIOU_Loss with DIOU_nms, while Yolov5 uses weighted nms.
 
-###Its 4 structures:
+### Its 4 structures:
 [![6i00l8.png](https://s3.ax1x.com/2021/03/01/6i00l8.png)](https://imgtu.com/i/6i00l8)
 It basically uses different width and depth for 4 different versions without much changes. For instance in yolov5s CSP it 
 uses 1 res-block :CSP_1, and Yolov5m with CSP_2, Yolov5l with CSP_3, Yolov5x CSP_4 etc.
 
-##YOLOv5 Customized
+## YOLOv5 Customized
 
  In our own application we choose to use YOLOv5x due to its suitable balance between accuracy, inference speed, number of parameters and model size 
 for deployment. For our own scenario, we collect 31 short clips (no longer than one minute) that covers 3 camera sites with 
@@ -92,7 +92,7 @@ For privacy concern, we cannot show the data of our camera footage. The followin
 <iframe width="560" height="315" src="https://youtu.be/AMTgYZu2QQM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-#Reference
+# Reference
 https://www.programmersought.com/article/29735056140/
 https://zhuanlan.zhihu.com/p/143747206
 https://zhuanlan.zhihu.com/p/172121380
