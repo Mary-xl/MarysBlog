@@ -55,11 +55,11 @@ After obtaining the information on 2D bounding boxes, dimensions, and viewing an
 through a projection equation:
 
 [![6F2uPe.png](https://s3.ax1x.com/2021/03/02/6F2uPe.png)](https://imgtu.com/i/6F2uPe)
-[![6F27dK.png](https://s3.ax1x.com/2021/03/02/6F27dK.png)](https://imgtu.com/i/6F27dK)
+[![6kkLbd.png](https://s3.ax1x.com/2021/03/02/6kkLbd.png)](https://imgtu.com/i/6kkLbd)
 
 Once the projection relationship can be built for each point, and K is obtained in the calibration process, the (x,y,z)
 which is the 3D center location of the 3D bounding box can be calculated by solving an optimization problem using Gauss-Newton.
-[![6FRQFU.png](https://s3.ax1x.com/2021/03/02/6FRQFU.png)](https://imgtu.com/i/6FRQFU)
+[![6kAmGV.png](https://s3.ax1x.com/2021/03/02/6kAmGV.png)](https://imgtu.com/i/6kAmGV)
 
 ### Dense 3D box alignment
 [![6FR8SJ.png](https://s3.ax1x.com/2021/03/02/6FR8SJ.png)](https://imgtu.com/i/6FR8SJ)
