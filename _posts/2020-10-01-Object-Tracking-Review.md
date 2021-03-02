@@ -114,3 +114,12 @@ belt application and pre-trained on Yolo-v3. The detector can be further finetun
 
 <iframe width="560" height="315" src="https://youtu.be/AShXxvh9Dps" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <div class="youtube-player" data-id="AShXxvh9Dps"></div>
+
+
+# Reference
+[1] https://zhuanlan.zhihu.com/p/76153871
+[2] Leal-Taixe, L., Milan, A., Reid, I., et al.: ‘Motchallenge 2015: towards a benchmark for multi-target tracking’, arXiv preprint arXiv:1504.01942, 2015
+[3] Milan, A., Leal-Taixe, L., Reid, I., et al.: ‘MOT16: a benchmark for multi-object tracking’, arXiv preprint arXiv:1603.00831, 2016
+[4] Ciaparrone, G., Sánchez, F. L., Tabik, S., Troiano, L., Tagliaferri, R., & Herrera, F. (2019). Deep Learning in Video Multi-Object Tracking: A Survey. 1–42.
+[5] Xiu, Y., Li, J., Wang, H., Fang, Y., Lu, C.: Pose flow: Efficient online pose tracking.arXiv preprint arXiv:1802.00977 (2018)
+[6] Facebook/Detectron2 is FAIR's next-generation platform for object detection and segmentation. Detectron2 on GitHub
