@@ -113,3 +113,4 @@ belt application and pre-trained on Yolo-v3. The detector can be further finetun
 -A counting mechanism has been added to the system including counting of both directions;
 
 <iframe width="560" height="315" src="https://youtu.be/AShXxvh9Dps" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="youtube-player" data-id="AShXxvh9Dps"></div>
